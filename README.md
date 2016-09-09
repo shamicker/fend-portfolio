@@ -1,7 +1,8 @@
 # fend-portfolio
 A portfolio website created through Udacity FEND
 
-#### Design
+### Design
+
 
 CRITERIA | MEETS SPECIFICATIONS
 --- | ---
@@ -10,7 +11,8 @@ Semantic HTML | HTML5 semantic tags such as `<header>`, `<footer>`, `<article>`,
 Custom Design | Provide at least one of the following customizations:<br><br><ul><li>Customize images and text.</li><li>Customize placement of the elements on the page (grid layout) with `HTML`, `CSS` or both.</li><li>Customize `CSS` styles applied at minimum to paragraph and heading elements.</li></ul>
 Grid-Based Layout | Page utilizes a grid-based layout with styles making use of the `flexbox` layout or a framework like `Bootstrap`, `Foundation`, etc.<br><br>If you're using `Bootstrap` or standard `HMTL/CSS`: the rows and columns of the grid must be wrapped in an element with a `container` class.
 
-#### Responsiveness
+
+### Responsiveness
 
 CRITERIA | MEETS SPECIFICATIONS
 --- | ---
@@ -19,14 +21,16 @@ Provide All Content | All content is rendered on all three devices. No content s
 Viewport meta Tag | Viewport `meta` tag is included in `HTML`. (i.e. `<meta name=”viewport” …`)
 Responsive Images | If a CSS framework is used, classes provided by the CSS framework are used to make images responsive, otherwise media-queries are used to ensure responsiveness of images.
 
-#### Separation of Concerns
+
+### Separation of Concerns
 
 CRITERIA | MEETS SPECIFICATIONS
 --- | ---
 Styles Separated From HTML | Portfolio completely separates structure (`HTML`) from design/style (`CSS`). There are no `style` attributes present in the body of the `HTML` document. There are no `<style>` elements in the document.<br><br>_Note_: It is acceptable to include `height` and `width` attributes in `<img>` elements.
 File structure | Files are organized with a directory structure that separates files based on functionality. For example:<br><br><ul><li>`css/` for stylesheets</li><li>`img/` for images</li><li>`js/` for JavaScript files</li><ul>
 
-#### Code Quality
+
+### Code Quality
 
 CRITERIA | MEETS SPECIFICATIONS
 ---|---
@@ -36,8 +40,9 @@ CSS Formatting Rules | <ul><li>Code does not have trailing white spaces.</li><br
 CSS Style Rules | <ul><li>Code uses meaningful or generic ID and class names that are as short as possible but as long as necessary.</li><br><li>Code does not use element names in conjunction with IDs or classes.</li><br><li>Code uses shorthand properties where possible.</li><br><li>[Optional] Code omits unit specification after 0 values.</li><br><li>[Optional] Code includes leading 0s in decimal values for readability.</li><br><li>[Optional] Code uses 3-character hexadecimal notation where possible.</li><br><li>[Optional] Code separate words in ID and class names by a hyphen.</li><br><li>[Optional] Code avoids user agent detection as well as `CSS` "hacks"—try a different approach first.
 General Meta Rules | <ul><li>`HTML` templates and documents use `UTF-8` encoding. (no `BOM`) i.e. `<meta charset="utf-8">`.<br>*[Optional] Mark todos and action items with `TODO`</li></ul>
 
-#### Suggestions to Make Your Project Stand Out!
 
-Use srcset in the img elements to provide optimized images to users on all device sizes.
+### Suggestions to Make Your Project Stand Out!
 
-Include additional JavaScript functionality, while maintaining required components. For example: Bootstrap Navbar, Polymer Components.
+* Use srcset in the img elements to provide optimized images to users on all device sizes.
+
+* Include additional JavaScript functionality, while maintaining required components. For example: Bootstrap Navbar, Polymer Components.
