@@ -1,0 +1,11 @@
+verbose: true
+jpegtran:
+  progressive: false
+optipng:
+  level: 7
+  interlace: false
+pngcrush:
+  fix: true
+  brute: true
+pngquant:
+  speed: 11
