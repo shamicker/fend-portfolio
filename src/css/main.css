@@ -1,13 +1,88 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Alegreya+Sans:900|Alex+Brush|Berkshire+Swash|Buda:300|Corben|Dancing+Script|Dynalight|El+Messiri:700|Elsie:900|Exo+2:800|Fascinate|Great+Vibes|Italianno|Kite+One|Lancelot|Libre+Franklin:500|Lobster|Mallanna|Megrim|Milonga|Molle:400i|NTR|Oregano|Palanquin+Dark:600|Playball|Quintessential|Simonetta:400,900|Tangerine';
+
 * {
   box-sizing: border-box;
 }
 
-.body {
-  border: 1px solid red;
-  max-width: 100vw;
+div {
+  /*border: 1px solid red;*/
 }
 
+body {
+  background-color: #000000;
+  color: rosybrown;
+}
 
+.body {
+  margin: 0.25em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 125px;
+}
+
+.logo {
+  /*border: 1px solid blue;*/
+  width: 100px;
+  height: 100px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.name {
+  text-align: right;
+  padding: 0 0.25em;
+}
+
+h1, h2, h3, h4 {
+  /*font-family: 'Milonga', cursive;*/
+  /*font-family: 'Oregano', cursive;*/
+  /*font-family: 'Simonetta', cursive;*/
+  /*font-family: 'Dynalight', cursive;*/
+  /*font-family: 'Playball', cursive;*/
+  /*font-family: 'Fascinate', cursive;*/
+  /*font-family: 'Lancelot', cursive;*/
+  /*font-family: 'Megrim', cursive;*/
+  /*font-family: 'Buda', cursive;*/
+  /*font-family: 'Corben', cursive;*/
+  /*font-family: 'Lobster', cursive;*/
+  /*font-family: 'Molle', cursive;*/
+  /*font-family: 'Great Vibes', cursive;*/
+  /*font-family: 'Alex Brush', cursive;*/
+  /*font-family: 'Italianno', cursive;*/
+  /*font-family: 'Dancing Script', cursive;*/
+  /*font-family: 'Tangerine', cursive;*/
+  /*font-family: 'Libre Franklin', sans-serif;*/
+  font-family: 'El Messiri', sans-serif;
+  /*font-family: 'Palanquin Dark', sans-serif;*/
+  /*font-family: 'Mallanna', sans-serif;*/
+  /*font-family: 'NTR', sans-serif;*/
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  /*font-family: 'Alegreya Sans', sans-serif;*/
+  /*font-family: 'Exo 2', sans-serif;*/
+  /*font-family: 'Elsie', cursive;*/
+  /*font-family: 'Quintessential', cursive;*/
+  /*font-family: 'Kite One', sans-serif;*/
+  /*font-family: 'Berkshire Swash', cursive;*/
+}
+
+.welcome-img {
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+  border: 1px solid lavender;
+}
+
+.project {
+  text-align: center;
+}
 
 
 
@@ -19,11 +94,11 @@
 .gradient-left {
   border: 0;
   height: 0.25em;
-  background-image: linear-gradient(to right, #ffffff, lavender 10%, #ffffff 90%);
+  background-image: linear-gradient(to right, black, rosybrown 10%, black 90%);
 }
 
 .gradient-right {
   border: 0;
   height: 0.25em;
-  background-image: linear-gradient(to left, #ffffff, lavender 10%, #ffffff 90%);
+  background-image: linear-gradient(to left, black, rosybrown 10%, black 90%);
 }
