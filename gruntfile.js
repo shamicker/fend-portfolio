@@ -34,9 +34,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'csslint', 'postcss', 'jshint', 'psi-ngrok', 'watch'
+    'csslint', 'postcss', 'jshint', 'gm_picturefill', 'psi-ngrok', 'watch'
   ]);
 
 };
 
+//TODO fix responsive-images in images.js!
 //TODO add in uglify and concat

@@ -27,9 +27,9 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-gm-picturefill": "0.0.4",
     "grunt-pagespeed": "^2.0.1",
     "grunt-postcss": "^0.8.0",
-    "grunt-respimg": "^1.1.0",
     "load-grunt-tasks": "^3.5.2",
     "ngrok": "^2.2.2"
   }

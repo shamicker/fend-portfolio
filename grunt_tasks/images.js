@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   grunt.config.merge({
 
-    respimg: {
+    responsive-images: {
       options: {
         files: [{
           expand: true,
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ['src/img/*.{svg,jpg,jpeg,png}'],
-        tasks: ['respimg'],
+        tasks: ['responsive-images'],
         options: {
           reload: true
         }
