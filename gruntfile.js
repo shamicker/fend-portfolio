@@ -20,7 +20,7 @@ module.exports = function(grunt) {
   // register tasks for running!
   grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
     var done = this.async();
-    var port = 9292;
+    var port = 8000;
 
     ngrok.connect(port, function(err, url) {
       if (err !== null) {
@@ -34,10 +34,13 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'csslint', 'postcss', 'jshint', 'gm_picturefill', 'psi-ngrok', 'watch'
+    'postcss',
+    'csslint',
+    'jshint',
+    'responsive-images',
+    'watch'
   ]);
 
 };
 
-//TODO fix responsive-images in images.js!
-//TODO add in uglify and concat
+//  TODO : add in uglify and concat

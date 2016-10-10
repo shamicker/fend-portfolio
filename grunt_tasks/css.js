@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         files: ['src/css/*.css'],
         tasks: ['csslint', 'postcss', 'csslint'],
         options: {
-          livereload: 9292
+          livereload: 8000
         }
       }
     }

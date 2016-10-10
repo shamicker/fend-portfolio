@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             grunt.log.writeIn('Watch took', time, 'ms to complete!');
             grunt.log.writeIn('Now waiting for more changes...');
           },
-          livereload: 9292
+          livereload: 8000
         }
       }
     }
