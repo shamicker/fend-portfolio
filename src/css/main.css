@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
- border: 1px solid orange;
+ /*border: 1px solid orange;*/
 }
 
 /* flex items  */
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 0.5em;
 /*   padding: 0.25em; */
-  border: 1px solid purple;
+  border: 1px solid lavender;
   box-shadow: 0.1em 0.1em lavender;
   flex: 1 1 300px;
   width: 100%; 
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-img {
   max-width: 100%;
-  border: 1px solid green;
+  border: 1px solid lavender;
   /*height: 170px;*/
 }
 
@@ -157,7 +157,28 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 
+/*
+ * Footer
+ */
 
+.footer {
+  /*border: 1px solid red;*/
+  padding: 1em;
+  /*border: 1px solid green;*/
+  /*width: 50%;*/
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-around;
+}
 
+.icon {
+  width: 30px;
+  height: 30px;
+  stroke-width: 0.75;
+  stroke: #9A4827;
+  fill: black;
+}
 
-
+.icon::hover {
+  cursor: pointer;
+}
