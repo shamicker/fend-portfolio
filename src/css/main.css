@@ -162,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .footer {
+  border-top: 1px solid lavender;
   /*border: 1px solid red;*/
   padding: 1em;
   /*border: 1px solid green;*/
