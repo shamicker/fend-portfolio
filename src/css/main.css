@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .body {
   /*padding: 0.25em;*/
+  padding-top: 150px;
   width: 100%;
 }
 
@@ -65,10 +66,15 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .header {
+  border-bottom: 1px solid lavender;
   display: flex;
   /*justify-content: space-around;*/
   /*align-items: center;*/
   max-height: 150px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
 }
 
 .logo, .name {
@@ -171,9 +177,12 @@ h1, h2, h3, h4, h5, h6 {
 .icon {
   width: 30px;
   height: 30px;
-  stroke-width: 0.75;
-  stroke: #9A4827;
-  fill: black;
+  stroke-width: 1%;
+  /*stroke: #9A4827;*/
+  stroke: black;
+  /*fill: black;*/
+  fill: #9A4827;
+  fill-opacity: 0.75;
 }
 
 .icon::hover {
