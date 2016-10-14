@@ -2,12 +2,10 @@ module.exports = function(grunt) {
   grunt.config.merge({
 
     csslint: {
-      strict: {
-        options: {
-          import: 2
-        },
-        src: ['src/css/*.css', "<%= postcss.dist.dest %>"]
-      }
+      options: {
+        quiet: true
+      },
+      src: ['src/css/*.css']
     },
 
     postcss: {

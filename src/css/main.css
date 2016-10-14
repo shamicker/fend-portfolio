@@ -1,8 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Alegreya+Sans:900|Alex+Brush|Berkshire+Swash|Buda:300|Corben|Dancing+Script|Dynalight|El+Messiri:700|Elsie:900|Exo+2:800|Fascinate|Great+Vibes|Italianno|Kite+One|Lancelot|Libre+Franklin:500|Lobster|Mallanna|Megrim|Milonga|Molle:400i|NTR|Oregano|Palanquin+Dark:600|Playball|Quintessential|Simonetta:400,900|Tangerine';
 
 /*  TODO LIST
-TODO: Replace @import with a <link>
-TODO: Replace all colours with hexadecimals
+TODO: Replace all colours with 3-place hexadecimals
 TODO: Get rid of all unwanted things
 */
 
@@ -18,41 +16,63 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /*font-family: 'Milonga', cursive;*/
-  /*font-family: 'Oregano', cursive;*/
-  /*font-family: 'Simonetta', cursive;*/
-  /*font-family: 'Dynalight', cursive;*/
-  /*font-family: 'Playball', cursive;*/
-  /*font-family: 'Fascinate', cursive;*/
-  /*font-family: 'Lancelot', cursive;*/
-  /*font-family: 'Megrim', cursive;*/
-  /*font-family: 'Buda', cursive;*/
-  /*font-family: 'Corben', cursive;*/
-  /*font-family: 'Lobster', cursive;*/
-  /*font-family: 'Molle', cursive;*/
-  /*font-family: 'Great Vibes', cursive;*/
-  /*font-family: 'Alex Brush', cursive;*/
-  /*font-family: 'Italianno', cursive;*/
-  /*font-family: 'Dancing Script', cursive;*/
-  /*font-family: 'Tangerine', cursive;*/
-  /*font-family: 'Libre Franklin', sans-serif;*/
   font-family: 'El Messiri', sans-serif;
-  /*font-family: 'Palanquin Dark', sans-serif;*/
-  /*font-family: 'Mallanna', sans-serif;*/
-  /*font-family: 'NTR', sans-serif;*/
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
-  /*font-family: 'Alegreya Sans', sans-serif;*/
-  /*font-family: 'Exo 2', sans-serif;*/
-  /*font-family: 'Elsie', cursive;*/
-  /*font-family: 'Quintessential', cursive;*/
-  /*font-family: 'Kite One', sans-serif;*/
-  /*font-family: 'Berkshire Swash', cursive;*/
 }
 
 .body {
   /*padding: 0.25em;*/
   padding-top: 150px;
   width: 100%;
+  /*font-size: 1em;*/
+  /*font-family: 'Heebo', sans-serif;*/
+  /*font-family: 'Hind Guntur', sans-serif;*/
+  /*font-family: 'Hind Madurai', sans-serif;*/
+  /*font-family: 'Maitree', serif;*/
+  /*font-family: 'Proza Libre', sans-serif;*/
+  /*font-family: 'Rubik', sans-serif;*/
+  /*font-family: 'Catamaran', sans-serif;*/
+  /*font-family: 'Martel Sans', sans-serif;*/
+  /*font-family: 'Laila', serif;*/
+  /*font-family: 'Fauna One', serif;*/
+  /*font-family: 'Gabriela', serif;*/
+  /*font-family: 'Noto Serif', serif;*/
+  /*font-family: 'Noto Sans', sans-serif;*/
+  /*font-family: 'Gafata', sans-serif;*/
+  /*font-family: 'Gilda Display', serif;*/
+  /*font-family: 'Rambla', sans-serif;*/
+  /*font-family: 'Average Sans', sans-serif;*/
+  /*font-family: 'Kite One', sans-serif;*/
+  /*font-family: 'Carrois Gothic', sans-serif;*/
+  /*font-family: 'Fenix', serif;*/
+  /*font-family: 'Jacques Francois', serif;*/
+  /*font-family: 'Marcellus', serif;*/
+  /*font-family: 'Quattrocento', serif;*/
+  /*font-family: 'Dosis', sans-serif;*/
+  /*font-family: 'Imprima', sans-serif;*/
+  /*font-family: 'Pontano Sans', sans-serif;*/
+  /*font-family: 'Montaga', serif;*/
+  /*font-family: 'Ruluko', sans-serif;*/
+  /*font-family: 'Asul', sans-serif;*/
+  /*font-family: 'Buenard', serif;*/
+  /*font-family: 'Cambo', serif;*/
+  /*font-family: 'Fresca', sans-serif;*/
+  /*font-family: 'Galdeano', sans-serif;*/
+  /*font-family: 'Antic', sans-serif;*/
+  /*font-family: 'Sorts Mill Goudy', serif;*/
+  /*font-family: 'Fanwood Text', serif;*/
+  /*font-family: 'Philosopher', sans-serif;*/
+  /*font-family: 'Prociono', serif;*/
+  /*font-family: 'Andika', sans-serif;*/
+  /*font-family: 'Actor', sans-serif;*/
+  /*font-family: 'Ovo', serif;*/
+  /*font-family: 'Snippet', sans-serif;*/
+  /*font-family: 'Istok Web', sans-serif;*/
+  /*font-family: 'Amaranth', sans-serif;*/
+  /*font-family: 'Judson', serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  /*font-family: 'Molengo', sans-serif;*/
 }
 
 .header, .me, .portfolio, .footer {
@@ -92,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   /*padding-right: 0.5em;*/
 }
 
-.logo > img {
+.logo-img {
   width: 100%;
   max-width: 175px;
   border-radius: 10px;
@@ -100,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   /*padding: 0 0.25em;*/
 }
 
-.name > h1, .name > h4 {
+.title {
   /*border: 1px solid green;*/
   /*margin: 0.25em 0;*/
   margin: 0;
@@ -108,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   /*width: 100%;*/
 }
 
-.name > h4 {
+.desc {
   text-align: center;
 }
 
@@ -122,12 +142,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-basis: 100%;
 }
 
-.me-words > li {
+.list-item {
   list-style-type: none;
   text-indent: -14px;
 }
 
-.me-words > li::before {
+.list-item::before {
   content: "\02713   ";
 }
 
@@ -140,8 +160,9 @@ h1, h2, h3, h4, h5, h6 {
 /* flex container */
 .portfolio {
  display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+ /*border: 1px solid red;*/
 }
 
 /*
@@ -152,19 +173,19 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project {
   text-align: center;
-  margin: 0.5em;
+  margin: 2em;
 /*   padding: 0.25em; */
   border: 1px solid lavender;
   border-radius: 5px;
-  box-shadow: 0.1em 0.15em 7px -2px #9A4827;
+  box-shadow: 0.1em 0.15em 10px -2px #9A4827;
   flex: 1 1 300px;
-  width: 100%; 
+  max-width: 600px; 
   cursor: pointer;
 }
 
 .project-img {
   max-width: 100%;
-  border: 1px solid lavender;
+  border: 2px solid lavender;
   /*height: 170px;*/
 }
 

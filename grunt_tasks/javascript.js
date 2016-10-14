@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         force: true,
         reporterOutput: "build/report.js"
       },
-      all: ['gruntfile.js', 'grunt_tasks/*.js', 'src/js/*.js']
+      all: ['gruntfile.js', 'grunt_tasks/*.js', 'src/js/app.js']
     },
 
     watch: {

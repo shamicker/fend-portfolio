@@ -1,13 +1,36 @@
 module.exports = function(grunt) {
   grunt.config.merge({
 
-    responsive-images: {
-      options: {
+    responsive_images: {
+      myTask: {
+        options: {
+          sizes: [
+            {
+              width: 640,
+              height: 360,
+              // quality: 40,
+              aspectRatio: false,
+              // gravity: "North"
+            },{
+              width: 960,
+              height: 540,
+              // quality: 90,
+              aspectRatio: false,
+              // gravity: "North"
+            },{
+              width: 1200,
+              height: 600,
+              // quality: 100,
+              aspectRatio: false,
+              // gravity: "North"
+            }
+          ]
+        },
         files: [{
           expand: true,
-          cwd: 'src/img/',
-          src: ['./**.{gif,jpg,png,svg}'],
-          dest: 'build/img/'
+          cwd: 'src/img/current',
+          src: ['./IPND_*.{jpg,png}'],
+          dest: 'build/img/responsives'
         }]
       }
     },
@@ -72,11 +95,11 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['src/img/*.{svg,jpg,jpeg,png}'],
-        tasks: ['responsive-images'],
-        options: {
-          reload: true
-        }
+      files: ['src/img/*.{svg,jpg,jpeg,png}'],
+      tasks: ['responsive-images'],
+      options: {
+        reload: true
+      }
       }
     }
 

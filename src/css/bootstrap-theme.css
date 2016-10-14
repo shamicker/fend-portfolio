@@ -88,8 +88,7 @@ fieldset[disabled] .btn-danger {
   background-color: #e0e0e0;
   background-position: 0 -15px;
 }
-.btn-default:active,
-/*.btn-default.active*/ {
+.btn-default:active /*.btn-default.active*/ {
   background-color: #e0e0e0;
   border-color: #dbdbdb;
 }
@@ -129,7 +128,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #265a88;
   background-position: 0 -15px;
 }
-.btn-primary:active,
+.btn-primary:active
 /*.btn-primary.active*/ {
   background-color: #265a88;
   border-color: #245580;
@@ -252,7 +251,7 @@ fieldset[disabled] .btn-info.active {
   background-color: #eb9316;
   background-position: 0 -15px;
 }
-.btn-warning:active,
+.btn-warning:active
 /*.btn-warning.active*/ {
   background-color: #eb9316;
   border-color: #e38d13;
@@ -293,7 +292,7 @@ fieldset[disabled] .btn-warning.active {
   background-color: #c12e2a;
   background-position: 0 -15px;
 }
-.btn-danger:active,
+.btn-danger:active
 /*.btn-danger.active*/ {
   background-color: #c12e2a;
   border-color: #b92c28;

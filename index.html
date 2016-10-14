@@ -13,20 +13,10 @@
   <link rel="stylesheet" href="src/css/bootstrap-theme.css">
   <!-- <link rel="stylesheet" href="src/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="src/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Amaranth|Andika|Antic|Asul|Average+Sans|Buenard|Cambo|Carrois+Gothic|Catamaran|Dosis|El+Messiri:700|Fanwood+Text|Fauna+One|Fenix|Fresca|Gabriela|Gafata|Galdeano|Gilda+Display|Heebo|Hind+Guntur|Hind+Madurai|Imprima|Istok+Web|Jacques+Francois|Judson|Kite+One|Laila|Lato|Maitree|Marcellus|Martel+Sans|Molengo|Montaga|Noto+Sans|Noto+Serif|Open+Sans|Ovo|Philosopher|Pontano+Sans|Prociono|Proza+Libre|Quattrocento|Rambla|Rubik|Ruluko|Snippet|Sorts+Mill+Goudy|Ubuntu" rel="stylesheet">
   <!-- <link rel="stylesheet" href="build/css/style.css"> -->
   <link rel="stylesheet" href="src/css/main.css">
 </head>
-
-<!-- TODO LIST
-TODO: grunt images (8)
-TODO: grunt everything (10)
-TODO: how to View Page for Tournament and Quiz (40)
-TODO: add nav bar? (3)
-TODO: project/portfolio margins (1)
-TODO: make small and medium project pics (0)
-TODO: media queries (5)
-TODO: Figure out links and scripts (30)
--->
 
 <body>
 
@@ -107,17 +97,27 @@ TODO: Figure out links and scripts (30)
 </svg>
 
 
+<!-- TODO LIST
+TODO: grunt everything (10)
+TODO: how to View Page for Tournament and Quiz (40)
+TODO: add nav bar? Nah.(3)
+TODO: project/portfolio margins (1)
+TODO: media queries (5)
+TODO: Figure out links and scripts (30)
+-->
+
+
   <div class="body">
 
     <header class="header">
       <div class="logo">
-        <img alt="logo" src="src/img/current/hipster_logo.png">
+        <img class="logo-img" alt="logo" src="src/img/current/hipster_logo.png">
       </div>
       <div class="name">
-        <h1>
+        <h1 class="title">
           Shauna Kerr
         </h1>
-        <h4>
+        <h4 class="title desc">
           Front End Developer
         </h4>
       </div>
@@ -127,12 +127,12 @@ TODO: Figure out links and scripts (30)
       <!-- <hr class="gradient-right"> -->
       <h2 class="section-heading">I Am</h2>
       <ul class="me-words">
-        <li>Shauna</li>
-        <li>a Udacity student and alumna</li>
-        <li>working towards becoming a web developer</li>
-        <li>an ex-semi-professional violist</li>
-        <li>learning how simple and fun cooking and gardening can be</li>
-        <li>always open to constructive criticism</li>
+        <li class="list-item">Shauna</li>
+        <li class="list-item">a Udacity student and alumna</li>
+        <li class="list-item">working towards becoming a web developer</li>
+        <li class="list-item">an ex-semi-professional violist</li>
+        <li class="list-item">learning how simple and fun cooking and gardening can be</li>
+        <li class="list-item">always open to constructive criticism</li>
       </ul>
       <!-- <hr class="gradient-left"> -->
     </aside>
@@ -143,17 +143,17 @@ TODO: Figure out links and scripts (30)
       </h2>
 
       <div class="project" data-toggle="modal" data-target="#project1">
-        <img class="project-img" alt="preview of my fill-in-the-blanks quiz project" src="src/img/current/IPND_Quiz.png">
+          <img class="project-img" srcset="build/img/responsives/IPND_Quiz-640x360.png 1x, build/img/responsives/IPND_Quiz-960x540.png 2x" src="build/img/responsives/IPND_Quiz-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
         <h3>Fill in the Blank Quiz</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project2">
-        <img class="project-img" alt="preview of my movie trailer website project" src="src/img/current/IPND_Trailers.png">
+        <img class="project-img" srcset="build/img/responsives/IPND_Trailers-640x360.png 1x, build/img/responsives/IPND_Trailers-960x540.png 2x" src="build/img/responsives/IPND_Trailers-640x360.png" alt="preview of my movie trailer website project">
         <h3>Movie Trailer Website</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project3">
-        <img class="project-img" alt="preview of my multi-tournament project" src="src/img/current/IPND_Tournament.png">
+        <img class="project-img" srcset="build/img/responsives/IPND_Tournament-640x360.png 1x, build/img/responsives/IPND_Tournament-960x540.png 2x" src="build/img/responsives/IPND_Tournament-640x360.png"  alt="preview of my multi-tournament project" >
         <h3>Tournament Database</h3>
       </div>
     </section>
