@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S.KERR</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"></script>
+  <link rel="stylesheet" href="src/css/normalize.css"></link>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css">
   <!-- <link rel="stylesheet" href="src/css/bootstrap-theme.min.css"> -->
@@ -100,9 +100,13 @@
 <!-- TODO LIST
 TODO: grunt everything (10)
 TODO: how to View Page for Tournament and Quiz (40)
-TODO: add nav bar? Nah.(3)
+TODO: add nav bar? Nah.
 TODO: project/portfolio margins (1)
 TODO: media queries (5)
+TODO: grunt logo (4)
+TODO: write real content!!! (6)
+TODO: optimize images properly(3)
+TODO: size mobile site for thumbs! (2)
 TODO: Figure out links and scripts (30)
 -->
 
@@ -125,8 +129,11 @@ TODO: Figure out links and scripts (30)
 
     <aside id="me" class="me">
       <!-- <hr class="gradient-right"> -->
-      <h2 class="section-heading">I Am</h2>
-      <ul class="me-words">
+      <h2 class="section-heading">Behind the Curtains</h2>
+      <p class="me-words-para">
+        My name is Shauna. I am currently a student and formerly an alumna of Udacity (.com), working my way towards becoming a web developer. 
+      </p>
+<!--       <ul class="me-words-list">
         <li class="list-item">Shauna</li>
         <li class="list-item">a Udacity student and alumna</li>
         <li class="list-item">working towards becoming a web developer</li>
@@ -134,16 +141,17 @@ TODO: Figure out links and scripts (30)
         <li class="list-item">learning how simple and fun cooking and gardening can be</li>
         <li class="list-item">always open to constructive criticism</li>
       </ul>
+ -->
       <!-- <hr class="gradient-left"> -->
     </aside>
 
     <section class="portfolio">
       <h2  class="section-heading">
-        Featured Work
+        On Display
       </h2>
 
       <div class="project" data-toggle="modal" data-target="#project1">
-          <img class="project-img" srcset="build/img/responsives/IPND_Quiz-640x360.png 1x, build/img/responsives/IPND_Quiz-960x540.png 2x" src="build/img/responsives/IPND_Quiz-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
+          <img class="project-img" srcset="build/img/responsives/IPND_Quiz2-640x360.png 1x, build/img/responsives/IPND_Quiz2-960x540.png 2x" src="build/img/responsives/IPND_Quiz2-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
         <h3>Fill in the Blank Quiz</h3>
       </div>
 
@@ -195,7 +203,7 @@ TODO: Figure out links and scripts (30)
           <h4 class="modal-title" id="project1-title">Fill in the Blank Quiz</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive" alt="preview of my quiz project" src="src/img/current/IPND_Quiz.png">
+          <img class="img-responsive" alt="preview of my quiz project" src="src/img/current/IPND_Quiz2.png">
           <p>I learned a lot about Python.</p>
         </div>
         <div class="modal-footer">

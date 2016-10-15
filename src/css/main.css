@@ -77,8 +77,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .header, .me, .portfolio, .footer {
   width: 100%;
-  /*border: 1px solid orange;*/
-  padding: 0 0.5em;
+  /*border: 1px solid green;*/
+  padding: 0 0.25em;
+  /*background-color: papayawhip;*/
 }
 
 /*
@@ -91,10 +92,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   /*justify-content: space-around;*/
   /*align-items: center;*/
-  max-height: 150px;
+  max-height: 150px; /*remember body pushed down this amt*/
   position: fixed;
   top: 0;
+  bottom: 0;
   z-index: 999;
+  /*background-color: papayawhip;*/
+  /*background-color: floralwhite;*/
+  /*background-color: oldlace;*/
+  /*background-color: snow;*/
   background-color: white;
 }
 
@@ -113,23 +119,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-  width: 100%;
+  width: 90%;
   max-width: 175px;
   border-radius: 10px;
   /*border: 1px solid green;*/
-  /*padding: 0 0.25em;*/
+  padding: 0.25em;
+  margin: 0.5em;
 }
 
 .title {
   /*border: 1px solid green;*/
-  /*margin: 0.25em 0;*/
-  margin: 0;
-  padding: 0 0.5em;
+  margin: 0.25em 0;
+  /*margin: 0;*/
+  /*padding: 0 1em;*/
+  text-align: center;
   /*width: 100%;*/
 }
 
 .desc {
-  text-align: center;
+  text-align: right;
+  padding: 0 1em;
 }
 
 /*
@@ -138,8 +147,26 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .section-heading {
-  padding: 0 0.5em;
+  /*border: 1px solid red;*/
+  /*margin-top: 1em;*/
+  padding: 0 0.25em;
   flex-basis: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.me {
+  /*border-bottom: 1px solid lavender;*/
+  padding-top: 1em;
+}
+
+.me-words-para {
+  /*border: 1px solid purple;*/
+  padding: 0 2em;
+/* padding: 0.25em; */
+  text-indent: 3em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .list-item {
@@ -173,7 +200,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project {
   text-align: center;
-  margin: 2em;
+  margin: 0 2em 2em;
 /*   padding: 0.25em; */
   border: 1px solid lavender;
   border-radius: 5px;
@@ -185,7 +212,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project-img {
   max-width: 100%;
-  border: 2px solid lavender;
+  border: 1px solid lavender;
   /*height: 170px;*/
 }
 
@@ -197,10 +224,9 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 .footer {
   border-top: 1px solid lavender;
   padding: 1em;
-  margin: 1em auto 0;
+  /*margin: 1em auto 0;*/
   display: flex;
   justify-content: space-around;
-  background-color: transparent;
 }
 
 .icon {

@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.config.merge({
 
     responsive_images: {
-      myTask: {
+      IPND: {
         options: {
           sizes: [
             {
@@ -10,19 +10,19 @@ module.exports = function(grunt) {
               height: 360,
               // quality: 40,
               aspectRatio: false,
-              // gravity: "North"
+              gravity: "Northwest"
             },{
               width: 960,
               height: 540,
               // quality: 90,
               aspectRatio: false,
-              // gravity: "North"
+              gravity: "Northwest"
             },{
               width: 1200,
               height: 600,
               // quality: 100,
               aspectRatio: false,
-              // gravity: "North"
+              gravity: "Northwest"
             }
           ]
         },
@@ -32,7 +32,8 @@ module.exports = function(grunt) {
           src: ['./IPND_*.{jpg,png}'],
           dest: 'build/img/responsives'
         }]
-      }
+      },
+      
     },
 
     // gm_picturefill: {

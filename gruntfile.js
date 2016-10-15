@@ -57,8 +57,7 @@ module.exports = function(grunt) {
     'csslint',
     'jshint',
     'responsive_images',
-    'connect',
-    'watch'
+    'connect'
   ]);
 };
 
