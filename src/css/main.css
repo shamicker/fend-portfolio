@@ -17,6 +17,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif;
+  margin: 0.5em;
 }
 
 .body {
@@ -162,11 +163,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .me-words-para {
   /*border: 1px solid purple;*/
-  padding: 0 2em;
+  margin: 1em 2em;
 /* padding: 0.25em; */
-  text-indent: 3em;
-  margin-bottom: 0;
-  margin-top: 0;
+  text-indent: 1.5em;
+  /*margin-bottom: 0;*/
+  /*margin-top: 0;*/
 }
 
 .list-item {
@@ -229,6 +230,13 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   justify-content: space-around;
 }
 
+.soc-btn {
+  min-width: 48px;
+  min-height: 48px;
+  /*border: 1px solid green;*/
+  text-align: center;
+}
+
 .icon {
   width: 30px;
   height: 30px;
@@ -238,6 +246,8 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   /*fill: #000000;*/
   fill: #9A4827;
   fill-opacity: 0.75;
+  /*border: 1px solid purple;*/
+  transform: perspective(1px) translateY(25%);
 }
 
 .icon:hover {
