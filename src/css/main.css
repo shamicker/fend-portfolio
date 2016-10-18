@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /*  LAYOUT
  * major layout stylings
  * - traditionally using ID selectors
@@ -118,10 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   /*background-color: white;*/
 }
 
-/*#about, #portfolio {
+#about, #portfolio {
   width: 75%;
   margin: 0 auto;
-}*/
+}
 
 #about, #portfolio, #footer {
   /*padding: 1em 0;*/
@@ -179,14 +178,14 @@ h1, h2, h3, h4, h5, h6 {
   /*margin: 0 auto;*/
   border-radius: 10px;
   /*border: 1px solid green;*/
-  padding: 0.25em;
+  padding: 0.5em;
   /*margin: 0.25em;*/
 }
 
 .title {
   /*border: 1px solid green;*/
-  /*margin: 0.25em;*/
-  margin: 0 20px 0 0;
+  /*margin: 0;*/
+  margin: 0 10px 0 0;
   /*padding-right: 10px;*/
   /*padding: 5px 0 0 10px;*/
   /*text-align: center;*/
@@ -209,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-desc {
   /*text-align: center;*/
-  /*margin-top: 0.5em;*/
+  margin-top: 0.5em;
   color: #9A4827;
 }
 
@@ -226,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 .me-words-para {
   /*border: 1px solid purple;*/
   /*margin: 0 1em;*/
-  padding: 0 2.5em 0.5em;
+  padding: 0 0.5em 0.5em;
   text-indent: 2em;
   /*margin-bottom: 0;*/
   /*margin-top: 0;*/
@@ -252,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio {
  display: flex;
  flex-flow: row wrap;
- justify-content: space-around;
+ /*justify-content: flex-start;*/
  /*border: 1px solid red;*/
 }
 
@@ -268,24 +267,25 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project {
   text-align: center;
-  margin: 1em 2em;
+  margin: 1em auto;
    /*padding: 0.25em;*/
   border: 1px solid lavender;
   border-radius: 10px;
-  box-shadow: 0.1em 0.15em 20px -5px #9A4827;
-  flex: 1 1 300px;
-  max-width: 600px;
+  box-shadow: 0.1em 0.15em 10px -2px #9A4827;
+  /*flex: 1 1 50%;*/
+  max-width: 450px;
   cursor: pointer;
 }
 
 .project-img {
   max-width: 100%;
+  border-radius: 10px;
   border: 1px solid lavender;
   /*height: 170px;*/
 }
 
 .project:hover {
-  border: 1px solid #9A4827;
+  /*border: 1px solid #9A4827;*/
   box-shadow: 0.1em 0.15em 10px 2px #9A4827;
 }
 
