@@ -33,7 +33,13 @@ module.exports = function(grunt) {
           dest: 'build/img/responsives'
         }]
       },
-      
+      logo: {
+        options: {
+          sizes: [{
+            width: 
+          }]
+        }
+      }
     },
 
     // gm_picturefill: {
