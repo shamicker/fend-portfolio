@@ -83,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 #body {
-  /*padding-top: 1em;*/
-  /*margin-top: 125px;*/
+  padding-top: 1em;
+  margin-top: 125px;
 
   /*padding: 0.25em;*/
   /*margin-top: 125px;*/
@@ -102,12 +102,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header {
-  /*position: fixed;*/
-  /*top: 0;*/
+  position: fixed;
+  top: 0;
   /*bottom: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  /*z-index: 999;*/
+  left: 0;
+  right: 0;
+  z-index: 999;
   background-color: #FFF;
   max-height: 125px;
   /*background-color: papayawhip;*/
