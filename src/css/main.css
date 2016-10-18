@@ -271,7 +271,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
    /*padding: 0.25em;*/
   border: 1px solid lavender;
   border-radius: 10px;
-  box-shadow: 0.1em 0.15em 10px -2px #9A4827;
+  box-shadow: 0.1em 0.15em 5px -2px #9A4827;
   /*flex: 1 1 50%;*/
   max-width: 450px;
   cursor: pointer;
@@ -286,7 +286,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project:hover {
   /*border: 1px solid #9A4827;*/
-  box-shadow: 0.1em 0.15em 10px 2px #9A4827;
+  box-shadow: 0.1em 0.15em 5px 2px #9A4827;
 }
 
 /*
