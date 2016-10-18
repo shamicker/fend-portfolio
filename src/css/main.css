@@ -84,13 +84,13 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 #body {
+  /*padding-top: 1em;*/
+  /*margin-top: 125px;*/
+
   /*padding: 0.25em;*/
   /*margin-top: 125px;*/
-  padding-top: 1em;
   /*width: 100%;*/
-
   /*width: 75%;*/
-  margin-top: 125px;
   /*border: 1px solid blue;*/
 }
 
@@ -103,12 +103,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header {
-  position: fixed;
-  top: 0;
+  /*position: fixed;*/
+  /*top: 0;*/
   /*bottom: 0;*/
-  left: 0;
-  right: 0;
-  z-index: 999;
+  /*left: 0;*/
+  /*right: 0;*/
+  /*z-index: 999;*/
   background-color: #FFF;
   max-height: 125px;
   /*background-color: papayawhip;*/
@@ -146,50 +146,70 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid lavender;
   box-shadow: 0 0.1em 5px -2px #9A4827;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /*align-items: baseline;*/
 
 }
 
-.header-half {
+.header-logo, .header-title {
   /*border: 1px solid blue;*/
-  flex: 1 1 50%;
+  /*flex: 1 1 50%;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.title-box {
+.header-logo {
+  /*flex: 1 3 50%;*/
+}
+
+.header-title {
+  /*flex: 5 1 50%;*/
   /*text-align: right;*/
   /*width: 100%;*/
   /*padding-right: 0.5em;*/
 }
 
 .logo {
-  max-width: 100%;
+  /*max-width: 100%;*/
+  max-height: 125px;
   /* max-height and margin combine to maintain aspect ratio! */
   /*max-height: 100%;*/
-  max-height: calc(100% - 10px);
-  margin: 0 auto;
+  /*max-height: calc(100% - 10px);*/
+  /*margin: 0 auto;*/
   border-radius: 10px;
   /*border: 1px solid green;*/
-  /*padding: 0.25em;*/
+  padding: 0.25em;
   /*margin: 0.25em;*/
 }
 
 .title {
   /*border: 1px solid green;*/
   /*margin: 0.25em;*/
-  margin: 0;
-  padding-right: 20px;
+  margin: 0 20px 0 0;
+  /*padding-right: 10px;*/
   /*padding: 5px 0 0 10px;*/
-  text-align: center;
+  /*text-align: center;*/
   /*width: 100%;*/
+}
+
+.first-name {
+  /*border: 1px solid red;*/
+  padding-left: 0.25em;
+  text-align: left;
+  display: block;
+  line-height: 1em;
+}
+.last-name {
+  /*border: 1px solid red;*/
+  text-align: right;
+  line-height: 1em;
+  display: block;
 }
 
 .title-desc {
   /*text-align: center;*/
-  margin-top: 0.5em;
+  /*margin-top: 0.5em;*/
   color: #9A4827;
 }
 
