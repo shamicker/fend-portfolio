@@ -97,7 +97,8 @@
 
 <!-- TODO LIST
   TODO: post prod - how to View Page for Tournament and Quiz (40)
-  TODO: project/portfolio margins (1)
+  TODO: last project sizing (1)
+  TODO: update link buttons to a tags (0)
   TODO: media queries (5)
   TODO: grunt logo (4)
   TODO: write real content!!! (6)
@@ -143,32 +144,17 @@
       <h2  class="portfolio-header section-heading">On Display</h2>
 
       <div class="project" data-toggle="modal" data-target="#project1">
-        <figure class="project-fig">
-          <img class="project-img" srcset="build/img/responsives/IPND_Quiz2-640x360.png 1x, build/img/responsives/IPND_Quiz2-960x540.png 2x" src="build/img/responsives/IPND_Quiz2-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
-          <figcaption>
-            Screenshot of the game in play.
-          </figcaption>
-        </figure>
+        <img class="project-img" srcset="build/img/responsives/IPND_Quiz2-640x360.png 1x, build/img/responsives/IPND_Quiz2-960x540.png 2x" src="build/img/responsives/IPND_Quiz2-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
         <h3>Fill in the Blank Quiz</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project2">
-        <figure class="project-fig">
-          <img class="project-img" srcset="build/img/responsives/IPND_Trailers-640x360.png 1x, build/img/responsives/IPND_Trailers-960x540.png 2x" src="build/img/responsives/IPND_Trailers-640x360.png" alt="preview of my movie trailer website project">
-          <figcaption>
-            Screenshot of the website 'in action'.
-          </figcaption>
-         </figure>
+        <img class="project-img" srcset="build/img/responsives/IPND_Trailers-640x360.png 1x, build/img/responsives/IPND_Trailers-960x540.png 2x" src="build/img/responsives/IPND_Trailers-640x360.png" alt="preview of my movie trailer website project">
         <h3>Movie Trailer Website</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project3">
-        <figure class="project-fig">
-          <img class="project-img" srcset="build/img/responsives/IPND_Tournament-640x360.png 1x, build/img/responsives/IPND_Tournament-960x540.png 2x" src="build/img/responsives/IPND_Tournament-640x360.png"  alt="preview of my multi-tournament project">
-          <figcaption>
-            Screenshot of image from video lesson on <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345408/modules/000134540875460/lessons/6797198607/concepts/34915387870923#">Relational Databases</a> (0:55).
-          </figcaption>
-         </figure>
+        <img class="project-img" srcset="build/img/responsives/IPND_Tournament-640x360.png 1x, build/img/responsives/IPND_Tournament-960x540.png 2x" src="build/img/responsives/IPND_Tournament-640x360.png"  alt="preview of my multi-tournament project">
         <h3>Tournament Database</h3>
       </div>
     </section>
@@ -179,12 +165,12 @@
           <use xlink:href="#icon-envelop"></use>
         </svg>
       </a>
-      <a class="soc-btn" href="https://github.com/shamicker" aria-label="view code">
+      <a class="soc-btn" href="https://github.com/shamicker" target="_blank" aria-label="view code">
         <svg class="icon icon-github" aria-hidden="true">
           <use xlink:href="#icon-github"></use>
         </svg>
       </a>
-      <a class="soc-btn" href="https://www.linkedin.com/in/canadian-shauna-kerr" aria-label="linkedIn">
+      <a class="soc-btn" href="https://www.linkedin.com/in/canadian-shauna-kerr" target="_blank" aria-label="linkedIn">
         <svg class="icon icon-linkedin" aria-hidden="true">
           <use xlink:href="#icon-linkedin"></use>
         </svg>
@@ -200,7 +186,7 @@
         </svg>
       </a> -->
     </footer>
-  </div>
+  </div>    <!-- End of div "body" -->
 
   <!-- Modal 1 -->
   <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1-title" aria-hidden="true">
@@ -210,21 +196,22 @@
           <h4 class="modal-title" id="project1-title">Fill in the Blank Quiz</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive project-img" alt="preview of my quiz project" src="src/img/current/IPND_Quiz2.png">
+          <figure class="project-fig">
+            <img class="img-responsive project-img" alt="preview of my quiz project" src="src/img/current/IPND_Quiz2.png">
+            <figcaption class="figcaption">
+              Screenshot of the game in play.
+            </figcaption>
+          </figure>
           <p>I learned a lot about Python.</p>
         </div>
         <div class="modal-footer">
-          <div class="input-group pull-left">
-            <input type="button" class="btn btn-default" value="View Page" onclick="location.href='www.google.com'">
-            <input type="button" class="btn btn-default" value="View Code" onclick="location.href='https://github.com/shamicker/Fill_in_the_blanks_Quiz/blob/master/fill-in-the-blanks.py'">
-          </div>
-          <div class="btn-group pull-right">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          <a role="button" class="btn btn-default pull-left disabled" target="_blank" href="#">Live</a>
+          <a role="button" class="btn btn-default pull-left" href="https://github.com/shamicker/Fill_in_the_blanks_Quiz/blob/master/fill-in-the-blanks.py" target="_blank">Code</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div>
+      </div> <!-- end modal-content -->
     </div>
-  </div>
+  </div> <!-- end modal fade -->
 
   <!-- Modal 2 -->
   <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2-title" aria-hidden="true">
@@ -234,17 +221,18 @@
           <h4 class="modal-title" id="project2-title">Movie Trailer Website</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive project-img" alt="preview of my movie trailer website project" src="src/img/current/IPND_Trailers.png">
+          <figure>
+            <img class="img-responsive project-img" alt="preview of my movie trailer website project" src="src/img/current/IPND_Trailers.png">
+            <figcaption class="figcaption">
+              Screenshot of the website 'in action'.
+            </figcaption>
+          </figure>
           <p>I learned a lot about how Bootstrap and Python can work together.</p>
         </div>
         <div class="modal-footer">
-          <div class="input-group pull-left">
-            <input type="button" class="btn btn-default" value="View Page" onclick="location.href='https://shamicker.github.io/Movie_trailer_website/'">
-            <input type="button" class="btn btn-default" value="View Code" onclick="location.href='https://github.com/shamicker/Movie_trailer_website'">
-          </div>
-          <div class="btn-group pull-right">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          <a role="button" class="btn btn-default pull-left" href="https://shamicker.github.io/Movie_trailer_website/" target="_blank">Live</a>
+          <a role="button" class="btn btn-default pull-left" href="https://github.com/shamicker/Movie_trailer_website" target="_blank">Code</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -258,17 +246,18 @@
           <h4 class="modal-title" id="project3-title">Tournament Database</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive project-img" alt="preview of my multi-tournament project" src="src/img/current/IPND_Tournament.png">
+          <figure>
+            <img class="img-responsive project-img" alt="preview of my multi-tournament project" src="src/img/current/IPND_Tournament.png">
+            <figcaption class="figcaption">
+              Screenshot of <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345408/modules/000134540875460/lessons/6797198607/concepts/34915387870923#" target="_blank">a video lesson</a> from <a href="https://www.udacity.com/course/intro-to-relational-databases--ud197" target="_blank">Udacity's Relational Databases course</a> (0:55).
+            </figcaption>
+          </figure>
           <p>I learned a lot about relational databases, PostgreSQL, the command line, and virtual machines.</p>
         </div>
         <div class="modal-footer">
-          <div class="input-group pull-left">
-            <input type="button" class="btn btn-default" value="View Page" onclick="location.href='www.google.com'">
-            <input type="button" class="btn btn-default" value="View Code" onclick="location.href='https://github.com/shamicker/Multi-Tournament'">
-          </div>
-          <div class="btn-group pull-right">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          <a role="button" class="btn btn-default pull-left disabled" href="#">Live</a>
+          <a role="button" class="btn btn-default pull-left" href="https://github.com/shamicker/Multi-Tournament" target="_blank">Code</a>
+          <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

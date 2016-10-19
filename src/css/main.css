@@ -75,13 +75,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif;
 }
 
-figcaption {
-  font-size: 5pt;
-  text-align: right;
-  padding-right: 0.5em;
-  /*border: 1px solid green;*/
-}
-
 
 /*  LAYOUT
  * major layout stylings
@@ -141,6 +134,10 @@ figcaption {
   flex-basis: 100%;
   text-align: center;
   /*width: 100%;*/
+}
+
+.btn-toolbar, .btn-group {
+  /*border: 1px solid green;*/
 }
 
 /*  MODULES
@@ -294,6 +291,20 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 .project:hover {
   /*border: 1px solid #9A4827;*/
   box-shadow: 0.1em 0.15em 5px 2px #9A4827;
+}
+
+/*
+ * Modal modifications
+ */
+
+
+
+.figcaption {
+  font-size: 0.75em;
+  text-align: right;
+  padding: 0.25em;
+  /*border: 1px solid green;*/
+  font-style: italic;
 }
 
 /*
