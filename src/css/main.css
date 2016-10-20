@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
  display: flex;
  flex-flow: row wrap;
  /*justify-content: flex-start;*/
- /*border: 1px solid red;*/
+ /*border: 1px solid purple;*/
 }
 
 .portfolio > .section-heading {
@@ -313,8 +313,12 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .footer {
   border-top: 1px solid lavender;
-  padding: 1em;
-  margin: 1em auto 0;
+  padding: 1em 0;
+}
+
+.soc-btn-group {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
