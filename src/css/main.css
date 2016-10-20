@@ -230,21 +230,21 @@ h1, h2, h3, h4, h5, h6 {
   /*border: 1px solid purple;*/
   /*margin: 0 1em;*/
   padding: 0 0.5em 0.5em;
-  text-indent: 2em;
+  text-indent: 1em;
   /*margin-bottom: 0;*/
   /*margin-top: 0;*/
   text-align: justify;
 
 }
 
-.list-item {
-  /*list-style-type: none;*/
-  /*text-indent: -14px;*/
-}
+/*.list-item {
+  list-style-type: none;
+  text-indent: -14px;
+}*/
 
-.list-item::before {
-  /*content: "\02713   ";*/
-}
+/*.list-item::before {
+  content: "\02713   ";
+}*/
 
 
 /*
@@ -277,7 +277,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #9A4827;
   /*flex: 1 1 50%;*/
-  max-width: 450px;
+  max-width: 400px;
   cursor: pointer;
 }
 
