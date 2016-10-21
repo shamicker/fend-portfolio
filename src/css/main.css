@@ -1,4 +1,4 @@
-
+/**/
 /*  TODO LIST
 TODO: cleanup - Replace all colours with 3-place hexadecimals (31)
 TODO: cleanup - Get rid of all unwanted things (32)
@@ -15,7 +15,8 @@ TODO: cleanup - Get rid of all unwanted things (32)
 }
 
 html, body {
-  background-color: #FFF;
+  /*background-color: #FFF;*/
+  background: #FFF url("./../img/current/transparent textures/arches.png");
   /*background-color: papayawhip;*/
   /*color: rosybrown; or darkSalmon*/
   width: 100%;
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 #body {
-  padding-top: 1em;
+  padding-top: 2em;
   margin-top: 125px;
 
   /*padding: 0.25em;*/
@@ -120,10 +121,18 @@ h1, h2, h3, h4, h5, h6 {
 #about, #portfolio {
   width: 75%;
   margin: 0 auto;
+  /*background: url("https://pixabay.com/get/e034b00f28f51c22d9584518a34f4391e073e7dc04b0154692f0c171afeeb0/polystyrene-911001_1920.jpg") lightblue;*/
+  /*border: 1px solid red;*/
+  /*padding: 1em 0;*/
 }
 
 #about, #portfolio, #footer {
+  /*background: url(cloth-569222.jpg) white;*/
   /*padding: 1em 0;*/
+}
+
+#footer {
+  /*margin-top: 1em;*/
 }
 
 /*  Portfolio header is a flex item!  */
@@ -139,6 +148,23 @@ h1, h2, h3, h4, h5, h6 {
 .btn-toolbar, .btn-group {
   /*border: 1px solid green;*/
 }
+
+.text-link {
+  color: #9A4827;
+}
+.text-link:hover {
+  color: #9A4827;
+}
+
+.btn {
+  color: #9A4827;
+}
+.btn:hover {
+  color: #9A4827;
+  background-color: #FFF;
+  text-decoration: underline;
+}
+
 
 /*  MODULES
  * design to exist as standalone components
@@ -208,12 +234,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   line-height: 1em;
   display: block;
+  /*border-bottom: 1px solid #9A4827;*/
 }
 
 .title-desc {
   /*text-align: center;*/
   margin-top: 0.5em;
   color: #9A4827;
+  /*border-top: 1px solid #9A4827;*/
 }
 
 /*
@@ -221,20 +249,79 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 
+.modal-body {
+  background: #FFF url("./../img/current/transparent textures/arches.png");
+}
+
 .me {
   /*border-bottom: 1px solid lavender;*/
   /*border: 1px solid orange;*/
+  /*background-size: contain;*/
+  /*height: 75vh;*/
+  /*background: #9A4827 url("https://pixabay.com/static/uploads/photo/2016/09/08/21/20/transparent-1655599_640.png");*/
+  /*background: #9A4827 url("https://pixabay.com/get/ec32b40b2dfc1c22d2524518a34f4391e073e7dc04b0154692f0c67ca6eab3/red-575458_1280.png");*/
+  background: #9A4827 url("./../img/current/transparent textures/egg-shell.png");
+  /*opacity: 0.8;*/
+  /*background-size: contain;*/
+  /*padding: 1em 0;*/
+  /*border: 5px solid #9A4827;*/
+  /*border-radius: 10px;*/
+
+  display: flex;
+  /*background-color: #9A4827;*/
+  border: 5px solid #9A4827;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*align-items: flex-start;*/
 }
 
-.me-words-para {
-  /*border: 1px solid purple;*/
+.me-header {
+  /*border: 1px solid orange;*/
+  padding-bottom: 2em;
+  /*background-color: #9A4827;*/
+  /*border: 5px solid #9A4827;*/
+  /*border-radius: 10px 10px 0 0;*/
+  flex: 1 1 calc(75%)/2;
+  /*max-width: 550px;*/
+}
+
+.me-header > .section-heading {
+  color: #000;
+}
+
+.me-words {
+  /*border: 5px solid #9A4827;*/
+  border-radius: 10px;
+  flex: 1 1 calc(75%)/2;
+  background-color: #FFF;
+}
+
+.me-img {
+  /*background-color: #9A4827;*/
+  /*border: 2px solid green;*/
+  border-radius: 150px;
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.me-para {
+  /*order: 2;*/
   /*margin: 0 1em;*/
-  padding: 0 0.5em 0.5em;
+  padding: 0.5em;
   text-indent: 1em;
   /*margin-bottom: 0;*/
   /*margin-top: 0;*/
   text-align: justify;
-
+  /*background-color: white;*/
+  /*color: black;*/
+  /*opacity: 1;*/
+  /*z-index: 99;*/
+  /*background-color: #FFF;*/
+  /*outline: 3px solid #9A4827;*/
+  /*outline-style: solid;*/
+  /*border-radius: 10px;*/
+  max-width: 350px;
 }
 
 /*.list-item {
@@ -253,9 +340,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .portfolio {
+  padding: 1em 0;
  display: flex;
  flex-flow: row wrap;
- /*justify-content: flex-start;*/
+ justify-content: space-around;
  /*border: 1px solid purple;*/
 }
 
@@ -271,14 +359,15 @@ neg numbers okay, sharp blur = 0, negs ok for spread
 
 .project {
   text-align: center;
-  margin: 1em auto;
+  margin: 1em 0;
    /*padding: 0.25em;*/
   border: 1px solid lavender;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #9A4827;
   /*flex: 1 1 50%;*/
-  max-width: 400px;
+  max-width: 500px;
   cursor: pointer;
+  background-color: #FFF;
 }
 
 .project-img {
@@ -292,6 +381,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   /*border: 1px solid #9A4827;*/
   box-shadow: 0.1em 0.15em 5px 2px #9A4827;
 }
+
 
 /*
  * Modal modifications
@@ -348,3 +438,41 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   cursor: pointer;
 }
 
+
+
+/* Media Queries
+ * - keep project sizes decent
+ * - keep about paragraph decent
+ */
+
+@media screen and (min-width: 400px) {
+  .me {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+  }
+  .me-para {
+    /*text-indent: 2em;*/
+    /*max-width: 350px;*/
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio {
+    justify-content: space-between;
+  }
+  .project {
+    margin: 1em;
+    max-width: calc(50% - 2em);
+  }
+  .soc-btn-group {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .project {
+    margin: 2em;
+    max-width: calc(33.33% - 4em);
+  }
+}
