@@ -16,13 +16,8 @@ module.exports = function(grunt) {
         // gradients: 2
       },
       // src: ['src/css/main.css']
-      dist: {
-        first: {
-          src: "<%= sass.dist.dest %>"
-        },
-        second: {
-          src: "build/css/output.css"
-        }
+      files: {
+        src: ["<%= postcss.dist.dest %>"]
       }
     },
 

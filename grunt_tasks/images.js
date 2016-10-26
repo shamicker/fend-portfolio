@@ -7,6 +7,12 @@ module.exports = function(grunt) {
         options: {
           sizes: [
             {
+              width: 320,
+              height: 240,
+              // quality: 90,
+              aspectRatio: false,
+              gravity: "Northwest"
+            },{
               width: 640,
               height: 360,
               // quality: 40,
@@ -19,9 +25,9 @@ module.exports = function(grunt) {
               aspectRatio: false,
               gravity: "Northwest"
             },{
-              width: 1200,
-              height: 600,
-              // quality: 100,
+              width: 1280,
+              height: 800,
+              // quality: 90,
               aspectRatio: false,
               gravity: "Northwest"
             }

@@ -19,17 +19,17 @@ module.exports = function(grunt) {
             }
           }
         },
+        html: {
+          files: 'index.html',
+          tasks: ['watch']
+        },
         scss: {
           files: ['src/css/*.scss'],
-          tasks: ['sass', 'csslint']
+          tasks: ['sass', 'postcss']
         },
-        css_first: {
-          files: "<%= sass.dist.dest %>",
-          tasks: ['csslint:first', 'postcss']
-        },
-        css_second: {
+        csslint: {
           files: "<%= postcss.dist.dest %>",
-          tasks: ['csslint:second']
+          tasks: ['csslint']
         },
         images: {
           files: ['src/img/*.{svg,jpg,jpeg,png}', 'src/img/**/*.{svg,jpg,jpeg,png}'],

@@ -4,7 +4,8 @@
 
 // colour palette ***************
 $darkest: #000100;
-$lightest: #ece2d0;
+// $lightest: #ece2d0;
+$lightest: #FFF;
 
 $primary: #23b5d3;
 $sub-bright-light: #8ebac8;
@@ -37,7 +38,7 @@ $radius: 10px;
   // border: 1px solid silver;
 }
 
-body {
+html, body {
 	background: $lightest url($body-texture) fixed;
 	width: 100%;
 	font-family: 'Laila', serif;
@@ -271,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid $project-outline;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px $shadow;
-  max-width: 600px;
+  max-width: 500px;
   cursor: pointer;
   background-color: $lightest;
 }
@@ -309,11 +310,11 @@ figure, .project-fig {
 
 .modal-title {
   font-size: larger;
-  // border-radius: $radius;
+  border-radius: $radius;
 }
 
 .modal-header, .modal-footer {
-  // background: url($body-texture);
+  background: url($body-texture);
 }
 
 

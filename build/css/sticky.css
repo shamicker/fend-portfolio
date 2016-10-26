@@ -5,8 +5,8 @@
 * {
   box-sizing: border-box; }
 
-body {
-  background: #ece2d0 url("./../img/transparent textures/skulls.png") fixed;
+html, body {
+  background: #FFF url("./../img/transparent textures/skulls.png") fixed;
   width: 100%;
   font-family: 'Laila', serif; }
 
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   color: #23b5d3;
-  background-color: #ece2d0;
+  background-color: #FFF;
   text-decoration: underline; }
 
 /************************************************************
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #ece2d0;
+  background: #FFF;
   border-radius: 10px; }
 
 .title {
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   /*color: black;*/
   /*opacity: 1;*/
   /*z-index: 99;*/
-  background: #ece2d0;
+  background: #FFF;
   /*outline: 3px solid #9A4827;*/
   /*outline-style: solid;*/
   border-radius: 10px;
@@ -132,9 +132,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #8ebac8;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #d3a588;
-  max-width: 600px;
+  max-width: 500px;
   cursor: pointer;
-  background-color: #ece2d0; }
+  background-color: #FFF; }
 
 .project-img {
   max-width: 100%;
@@ -159,11 +159,15 @@ figure, .project-fig {
   margin: 1em 40px; }
 
 .modal-title {
-  font-size: larger; }
+  font-size: larger;
+  border-radius: 10px; }
+
+.modal-header, .modal-footer {
+  background: url("./../img/transparent textures/skulls.png"); }
 
 /* FOOTER  **************************************************/
 .footer {
-  background: #ece2d0;
+  background: #FFF;
   padding: 1em 0;
   border-radius: 10px; }
 
