@@ -39,7 +39,6 @@ $radius: 10px;
 }
 
 html, body {
-	background: $lightest url($body-texture) fixed;
 	width: 100%;
 	font-family: 'Laila', serif;
 }
@@ -89,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* flex container */
 .body {
+  background: $lightest url($body-texture) fixed;
   width: 80%;
   margin: $header-height auto 0;
   padding: 2em 0 0;
