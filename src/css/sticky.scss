@@ -43,7 +43,7 @@ html, body {
   height: 100%;
   // position: fixed;
   background-attachment: fixed !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background: $lightest url($body-texture) fixed;
 	font-family: 'Laila', serif;
 }
@@ -53,7 +53,7 @@ html, body {
   height: 100%;
   // position: fixed;
   background-attachment: fixed !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background: $lightest url($body-texture) fixed;
 }
 
