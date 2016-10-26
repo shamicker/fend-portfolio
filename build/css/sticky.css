@@ -17,10 +17,11 @@ h1, h2, h3, h4, h5, h6 {
  * MODULES
  * stand-alone items
  **************************************************************/
-.text-link, .text-link:hover, .btn, .btn:hover {
+.text-link, .text-link:hover, .btn {
   color: #23b5d3; }
 
 .btn:hover {
+  color: #23b5d3;
   background-color: #ece2d0;
   text-decoration: underline; }
 
@@ -56,15 +57,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-logo {
   order: 2; }
-  .header-logo .logo {
-    max-width: 80%;
-    display: block;
-    margin: 1em auto 0;
-    /* max-height and margin combine to maintain aspect ratio! */
-    /*max-height: 100%;*/
-    /*max-height: calc(100% - 10px);*/
-    border-radius: 10px;
-    /*margin: 0.25em;*/ }
+
+.logo {
+  max-width: 80%;
+  display: block;
+  margin: 1em auto 0;
+  /* max-height and margin combine to maintain aspect ratio! */
+  /*max-height: 100%;*/
+  /*max-height: calc(100% - 10px);*/
+  border-radius: 10px;
+  /*margin: 0.25em;*/ }
 
 .header-title {
   flex-basis: 100%;
@@ -74,49 +76,47 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around;
   background: #ece2d0;
   border-radius: 10px; }
-  .fixed .header-title {
-    position: fixed;
-    padding: 0.5em 0;
-    top: 0;
-    left: 0;
-    right: 0; }
-  .header-title .title {
-    margin: 0;
-    /*padding-right: 10px;*/
-    /*padding: 5px 0 0 10px;*/
-    text-align: center; }
-  .header-title .name {
-    font-size: 3em;
-    /*border-bottom: 1px solid #9A4827;*/ }
-  .header-title .desc {
-    font-size: 1.25em;
-    font-variant: small-caps;
-    color: #23b5d3;
-    /*border-top: 1px solid #9A4827;*/ }
+
+.title {
+  margin: 0;
+  /*padding-right: 10px;*/
+  /*padding: 5px 0 0 10px;*/
+  text-align: center; }
+
+.name {
+  font-size: 3em;
+  /*border-bottom: 1px solid #9A4827;*/ }
+
+.desc {
+  font-size: 1.25em;
+  font-variant: small-caps;
+  color: #23b5d3;
+  /*border-top: 1px solid #9A4827;*/ }
 
 .about-para-div {
   flex: 1 1 100%;
   order: 3;
   /*border: 5px solid #9A4827;*/
   border-radius: 10px; }
-  .about-para-div .about-para {
-    /*order: 2;*/
-    /*margin: 0 1em;*/
-    padding: 1em;
-    text-indent: 1em;
-    /*margin-bottom: 0;*/
-    /*margin-top: 0;*/
-    text-align: justify;
-    /*background-color: white;*/
-    /*color: black;*/
-    /*opacity: 1;*/
-    /*z-index: 99;*/
-    background: linear-gradient(#ece2d0 70%, transparent 95%);
-    /*outline: 3px solid #9A4827;*/
-    /*outline-style: solid;*/
-    border-radius: 10px;
-    max-width: 375px;
-    margin: 1em auto; }
+
+.about-para {
+  /*order: 2;*/
+  /*margin: 0 1em;*/
+  padding: 1em;
+  text-indent: 1em;
+  /*margin-bottom: 0;*/
+  /*margin-top: 0;*/
+  text-align: justify;
+  /*background-color: white;*/
+  /*color: black;*/
+  /*opacity: 1;*/
+  /*z-index: 99;*/
+  background: linear-gradient(#ece2d0 70%, transparent 95%);
+  /*outline: 3px solid #9A4827;*/
+  /*outline-style: solid;*/
+  border-radius: 10px;
+  max-width: 375px;
+  margin: 1em auto; }
 
 /* PORTFOLIO  ***********************************************/
 .portfolio {

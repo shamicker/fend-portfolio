@@ -52,22 +52,15 @@ h1, h2, h3, h4, h5, h6 {
  * stand-alone items
  **************************************************************/
 
-.text-link {
+.text-link, .text-link:hover, .btn {
 	color: $link-text;
-  &:hover {
-    @extend .text-link;
-  }
 }
 
-.btn {
-  @extend .text-link;
-  &:hover {
-    @extend .btn;
-    background-color: $lightest;
-    text-decoration: underline;
-  }
+.btn:hover {
+  color: $link-text;
+  background-color: $lightest;
+  text-decoration: underline;
 }
-
 
 /************************************************************
  *  LAYOUT
@@ -144,23 +137,22 @@ h1, h2, h3, h4, h5, h6 {
   // flex-direction: column;
   // justify-content: center;
   // background: $lightest;
-
-  .logo {
-    max-width: 80%;
-    display: block;
-    margin: 1em auto 0;
-    // background: $lightest;
-    // text-align: center;
-    // max-height: $header-height;
-    /* max-height and margin combine to maintain aspect ratio! */
-    /*max-height: 100%;*/
-    /*max-height: calc(100% - 10px);*/
-    // margin: 0 auto;
-    border-radius: 10px;
-    // border: 1px solid green;
-    // padding: 0.5em;
-    /*margin: 0.25em;*/
-  }
+}
+.logo {
+  max-width: 80%;
+  display: block;
+  margin: 1em auto 0;
+  // background: $lightest;
+  // text-align: center;
+  // max-height: $header-height;
+  /* max-height and margin combine to maintain aspect ratio! */
+  /*max-height: 100%;*/
+  /*max-height: calc(100% - 10px);*/
+  // margin: 0 auto;
+  border-radius: 10px;
+  // border: 1px solid green;
+  // padding: 0.5em;
+  /*margin: 0.25em;*/
 }
 
 
@@ -176,46 +168,46 @@ h1, h2, h3, h4, h5, h6 {
   // border: 1px solid red;
   background: $lightest;
   border-radius: $radius;
-  .fixed & {
-    position: fixed;
-    padding: 0.5em 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  .title {
-    // border: 1px solid green;
-    margin: 0;
-    // margin: 0 0 0.5em 0;
-    /*padding-right: 10px;*/
-    /*padding: 5px 0 0 10px;*/
-    text-align: center;
-    // width: 100%;
-    // font-variant: small-caps;
-    // font-size: 2em;
-  }
-  .name {
-    // /*border: 1px solid red;*/
-    // padding-left: 0.25em;
-    // text-align: left;
-    // display: block;
-
-    font-size: 3em;
-    // text-align: right;
-    // line-height: 1em;
-    // display: block;
-    /*border-bottom: 1px solid #9A4827;*/
-  }
-  .desc {
-    font-size: 1.25em;
-    font-variant: small-caps;
-    // text-align: center;
-    // margin: 0 0 0.5em;
-    color: $link-text;
-    /*border-top: 1px solid #9A4827;*/
-  }
+  // .fixed & {
+  //   position: fixed;
+  //   padding: 0.5em 0;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  // }
 } // header-title
 
+.title {
+  // border: 1px solid green;
+  margin: 0;
+  // margin: 0 0 0.5em 0;
+  /*padding-right: 10px;*/
+  /*padding: 5px 0 0 10px;*/
+  text-align: center;
+  // width: 100%;
+  // font-variant: small-caps;
+  // font-size: 2em;
+}
+.name {
+  // /*border: 1px solid red;*/
+  // padding-left: 0.25em;
+  // text-align: left;
+  // display: block;
+
+  font-size: 3em;
+  // text-align: right;
+  // line-height: 1em;
+  // display: block;
+  /*border-bottom: 1px solid #9A4827;*/
+}
+.desc {
+  font-size: 1.25em;
+  font-variant: small-caps;
+  // text-align: center;
+  // margin: 0 0 0.5em;
+  color: $link-text;
+  /*border-top: 1px solid #9A4827;*/
+}
 
 .about-para-div {
   // flex: 1 1 400px;
@@ -232,26 +224,26 @@ h1, h2, h3, h4, h5, h6 {
   // background-color: $lightest;
   // margin: 0 auto;
   // width: 100%;
-  .about-para {
-    /*order: 2;*/
-    /*margin: 0 1em;*/
-    padding: 1em;
-    text-indent: 1em;
-    /*margin-bottom: 0;*/
-    /*margin-top: 0;*/
-    text-align: justify;
-    /*background-color: white;*/
-    /*color: black;*/
-    /*opacity: 1;*/
-    /*z-index: 99;*/
-    background: linear-gradient($lightest 70%, transparent 95%);
-    /*outline: 3px solid #9A4827;*/
-    /*outline-style: solid;*/
-    border-radius: $radius;
-    max-width: 375px;
-    // align-self: flex-end;
-    margin: 1em auto;
-  }
+}
+.about-para {
+  /*order: 2;*/
+  /*margin: 0 1em;*/
+  padding: 1em;
+  text-indent: 1em;
+  /*margin-bottom: 0;*/
+  /*margin-top: 0;*/
+  text-align: justify;
+  /*background-color: white;*/
+  /*color: black;*/
+  /*opacity: 1;*/
+  /*z-index: 99;*/
+  background: linear-gradient($lightest 70%, transparent 95%);
+  /*outline: 3px solid #9A4827;*/
+  /*outline-style: solid;*/
+  border-radius: $radius;
+  max-width: 375px;
+  // align-self: flex-end;
+  margin: 1em auto;
 }
 
 
