@@ -46,11 +46,12 @@ html, body {
 .outer-body {
   width: 100%;
   height: 100%;
-  display: block
+  display: block;
   position: fixed;
+  z-index: -99;
   background-attachment: fixed !important;
-  background-size: contain !important;
-  background: $lightest url($body-texture) fixed;
+  background-size: 50% !important;
+  background: $lightest url($body-texture);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -7,19 +7,18 @@
 
 html, body {
   width: 100%;
-  height: 100%;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background: #FFF url("./../img/transparent textures/skulls.png") fixed;
   font-family: 'Laila', serif; }
 
 /* fixed background on iOS mobiles */
 .outer-body {
   width: 100%;
   height: 100%;
+  display: block;
+  position: fixed;
+  z-index: -99;
   background-attachment: fixed !important;
-  background-size: cover !important;
-  background: #FFF url("./../img/transparent textures/skulls.png") fixed; }
+  background-size: 50% !important;
+  background: #FFF url("./../img/transparent textures/skulls.png"); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif; }
