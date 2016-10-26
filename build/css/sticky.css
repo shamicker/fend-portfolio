@@ -6,9 +6,12 @@
   box-sizing: border-box; }
 
 html, body {
-  background: #FFF url("./../img/transparent textures/skulls.png") fixed;
   width: 100%;
   font-family: 'Laila', serif; }
+
+/* fixed background on iOS mobiles */
+.outer-body {
+  background: #FFF url("./../img/transparent textures/skulls.png") fixed; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif; }

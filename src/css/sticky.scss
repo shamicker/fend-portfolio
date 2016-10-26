@@ -42,6 +42,10 @@ html, body {
 	width: 100%;
 	font-family: 'Laila', serif;
 }
+/* fixed background on iOS mobiles */
+.outer-body {
+  background: $lightest url($body-texture) fixed;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'El Messiri', sans-serif;
@@ -88,7 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* flex container */
 .body {
-  background: $lightest url($body-texture) fixed;
   width: 80%;
   margin: $header-height auto 0;
   padding: 2em 0 0;
