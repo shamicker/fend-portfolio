@@ -23,9 +23,13 @@ module.exports = function(grunt) {
           files: ['src/css/*.scss'],
           tasks: ['sass', 'csslint']
         },
-        css: {
+        css_first: {
           files: "<%= sass.dist.dest %>",
-          tasks: ['csslint', 'postcss', 'csslint']
+          tasks: ['csslint:first', 'postcss']
+        },
+        css_second: {
+          files: "<%= postcss.dist.dest %>",
+          tasks: ['csslint:second']
         },
         images: {
           files: ['src/img/*.{svg,jpg,jpeg,png}', 'src/img/**/*.{svg,jpg,jpeg,png}'],
