@@ -3,27 +3,14 @@ module.exports = function(grunt) {
 
     jshint: {
       options: {
+        globals: {
+          "require": false,
+          "module": false
+        },
         force: true,
         reporterOutput: "build/report.js"
       },
-      all: ['gruntfile.js', 'grunt_tasks/*.js', 'src/js/app.js']
-    },
-
-    watch: {
-      scripts: {
-        files: ['gruntfile.js', './grunt_tasks/*.js', 'src/js/*.js'],
-        tasks: ['jshint'],
-        options: {
-          event: 'changed',
-          reload: true, // reload Watch
-          forever: false,
-          dateFormat: function(time) {
-            grunt.log.writeIn('Watch took', time, 'ms to complete!');
-            grunt.log.writeIn('Now waiting for more changes...');
-          },
-          livereload: 8000
-        }
-      }
+      all: ['gruntfile.js', 'grunt_tasks/*.js', 'src/js/app.js', 'src/js/header.js']
     }
 
   });

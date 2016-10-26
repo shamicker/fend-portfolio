@@ -12,6 +12,9 @@ module.exports = function(grunt) {
   require('./grunt_tasks/javascript.js')(grunt);
   require('./grunt_tasks/images.js')(grunt);
   require('./grunt_tasks/pagespeed.js')(grunt);
+  require('./grunt_tasks/watch.js')(grunt);
+  require('./grunt_tasks/copy.js')(grunt);
+
 
   //
   // grunt.event.on('watch', function(action, filepath, target) {
@@ -33,32 +36,42 @@ module.exports = function(grunt) {
   //     done();
   //   });
   // });
-  grunt.registerTask('pagespeed', function() {
-    var async = this.async;
 
-    grunt.event.once('connect.server.listening', function(host, port){
-      psiNgrok({
-        port: 8000,
-        pages: ['index.html'],
-        onError: function(error) {
-          grunt.fatal(error);
-        },
-        options: {
-          threshold: 80
-        }
-      }).then(async());
-    });
-  });
+
+
+  // grunt.registerTask('pagespeed', function() {
+  //   var async = this.async;
+
+  //   grunt.event.once('connect.server.listening', function(host, port){
+  //     psiNgrok({
+  //       port: 8000,
+  //       pages: ['index.html'],
+  //       onError: function(error) {
+  //         grunt.fatal(error);
+  //       },
+  //       options: {
+  //         threshold: 80
+  //       }
+  //     }).then(async());
+  //   });
+  // });
 
   // grunt.registerTask('psi_only', ['pagespeed', 'connect:server:keepalive']);
 
+  grunt.registerTask('live', ['connect', 'watch']);
+
   grunt.registerTask('default', [
-    'postcss',
-    'csslint',
     'jshint',
     'responsive_images',
-    'connect'
-  ]);
+    'copy',
+    'sass',
+    'postcss',
+    'csslint',
+    // 'copy'
+    // 'pagespeed',
+    'live'
+    ]);
+
 };
 
 //  TODO : add in uglify and concat

@@ -1,11 +1,24 @@
 module.exports = function(grunt) {
   grunt.config.merge({
 
+    sass: {
+      dist: {
+        // src: 'src/css/sass-style.scss',
+        src: 'src/css/sticky.scss',
+        // dest: 'build/css/sass-style.css'
+        dest: 'build/css/sticky.css'
+      }
+    },
+
     csslint: {
       options: {
-        quiet: true
+        // quiet: true
+        // gradients: 2
       },
-      src: ['src/css/*.css']
+      // src: ['src/css/main.css']
+      files: {
+        src: "<%= sass.dist.dest %>"
+      }
     },
 
     postcss: {
@@ -14,20 +27,11 @@ module.exports = function(grunt) {
         // failOnError: true
       },
       dist: {
-        src: ['src/css/*.css'],
-        dest: 'build/css/style.css'
-      }
-    },
-
-    watch: {
-      scripts: {
-        files: ['src/css/*.css'],
-        tasks: ['csslint', 'postcss', 'csslint'],
-        options: {
-          livereload: 8000
-        }
+        src: ["<%= sass.dist.dest %>"]
+        // dest: 'build/css/output.css'
       }
     }
 
   });
 };
+
