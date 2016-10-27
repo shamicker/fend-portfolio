@@ -11,7 +11,7 @@ module.exports = function(grunt) {
               height: 240,
               // quality: 90,
               aspectRatio: false,
-              gravity: "Northwest"
+              gravity: "North"
             },{
               width: 640,
               height: 360,
@@ -56,6 +56,17 @@ module.exports = function(grunt) {
         }]
       }
 
+    },
+
+    imageoptim: {
+      myPngs: {
+        options: {
+          imageoptim: true,
+          imageAlpha: true,
+          quitAfter: true
+        },
+        src: ['build/img/']
+      }
     }
 
 

@@ -30,6 +30,7 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-gm-picturefill": "0.0.4",
+    "grunt-imageoptim": "^1.4.1",
     "grunt-pagespeed": "^2.0.1",
     "grunt-postcss": "^0.8.0",
     "grunt-responsive-images": "^0.1.9",

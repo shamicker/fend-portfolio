@@ -32,8 +32,8 @@ module.exports = function(grunt) {
           tasks: ['csslint']
         },
         images: {
-          files: ['src/img/*.{svg,jpg,jpeg,png}', 'src/img/**/*.{svg,jpg,jpeg,png}'],
-          tasks: ['responsive-images']
+          files: ['src/img/**/*.{svg,jpg,jpeg,png}', 'build/img/**/*.{svg, jpg, jpeg, png}'],
+          tasks: ['responsive-images', 'imageoptim']
         }
         // pagespeed: {
         //   files: ['index.html'],

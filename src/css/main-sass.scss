@@ -4,6 +4,21 @@ TODO: cleanup - Replace all colours with 3-place hexadecimals (31)
 TODO: cleanup - Get rid of all unwanted things (32)
 */
 
+$darkest: #000100;
+$lightest: #ece2d0;
+
+$mid: #d3a588;
+$brightest: #23b5d3;
+$bold-light: #8ebac8;
+
+$link-colour: $brightest;
+$shadow: $mid;
+$project-outline: $mid;
+$page-outline: $bold-light;
+$icon: $brightest;
+
+$body-texture: "./../img/transparent textures/arches.png";
+$hero-texture: "./../img/transparent textures/skulls.png";
 
 /*  BASICS
  * default stylings: headings, links, fonts, body backgrounds...
@@ -11,165 +26,38 @@ TODO: cleanup - Get rid of all unwanted things (32)
 
 * {
   box-sizing: border-box;
-  /*border: 1px solid red;*/
 }
 
 html, body {
-  background: #E0E0CE url("./../img/current/transparent textures/arches.png");
-  width: 100%;
+  background: $lightest url($body-texture) fixed;
   font-family: 'Laila', serif;
-  /*font-family: 'Gabriela', serif;*/
-  /*font-family: 'Imprima', sans-serif;*/
-  /*font-family: 'Heebo', sans-serif;*/
-  /*font-family: 'Hind Guntur', sans-serif;*/
-  /*font-family: 'Hind Madurai', sans-serif;*/
-  /*font-family: 'Maitree', serif;*/
-  /*font-family: 'Proza Libre', sans-serif;*/
-  /*font-family: 'Rubik', sans-serif;*/
-  /*font-family: 'Catamaran', sans-serif;*/
-  /*font-family: 'Martel Sans', sans-serif;*/
-  /*font-family: 'Fauna One', serif;*/
-  /*font-family: 'Noto Serif', serif;*/
-  /*font-family: 'Noto Sans', sans-serif;*/
-  /*font-family: 'Gafata', sans-serif;*/
-  /*font-family: 'Gilda Display', serif;*/
-  /*font-family: 'Rambla', sans-serif;*/
-  /*font-family: 'Average Sans', sans-serif;*/
-  /*font-family: 'Kite One', sans-serif;*/
-  /*font-family: 'Carrois Gothic', sans-serif;*/
-  /*font-family: 'Fenix', serif;*/
-  /*font-family: 'Jacques Francois', serif;*/
-  /*font-family: 'Marcellus', serif;*/
-  /*font-family: 'Quattrocento', serif;*/
-  /*font-family: 'Dosis', sans-serif;*/
-  /*font-family: 'Pontano Sans', sans-serif;*/
-  /*font-family: 'Montaga', serif;*/
-  /*font-family: 'Ruluko', sans-serif;*/
-  /*font-family: 'Asul', sans-serif;*/
-  /*font-family: 'Buenard', serif;*/
-  /*font-family: 'Cambo', serif;*/
-  /*font-family: 'Fresca', sans-serif;*/
-  /*font-family: 'Galdeano', sans-serif;*/
-  /*font-family: 'Antic', sans-serif;*/
-  /*font-family: 'Sorts Mill Goudy', serif;*/
-  /*font-family: 'Fanwood Text', serif;*/
-  /*font-family: 'Philosopher', sans-serif;*/
-  /*font-family: 'Prociono', serif;*/
-  /*font-family: 'Andika', sans-serif;*/
-  /*font-family: 'Actor', sans-serif;*/
-  /*font-family: 'Ovo', serif;*/
-  /*font-family: 'Snippet', sans-serif;*/
-  /*font-family: 'Istok Web', sans-serif;*/
-  /*font-family: 'Amaranth', sans-serif;*/
-  /*font-family: 'Judson', serif;*/
-  /*font-family: 'Open Sans', sans-serif;*/
-  /*font-family: 'Lato', sans-serif;*/
-  /*font-family: 'Ubuntu', sans-serif;*/
-  /*font-family: 'Molengo', sans-serif;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif;
 }
 
-
-/*  LAYOUT
- * major layout stylings
- * - traditionally using ID selectors
- * - generally only a single selector
- */
-
-#body {
+.body {
   padding-top: 2em;
   margin-top: 125px;
-
-  /*padding: 0.25em;*/
-  /*margin-top: 125px;*/
-  /*width: 100%;*/
-  /*width: 75%;*/
-  /*border: 1px solid blue;*/
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
-
-#header, #about, #portfolio, #footer {
-  /*width: 100%;*/
-  /*border: 1px solid green;*/
-  /*padding: 0 0.25em;*/
-  /*background-color: papayawhip;*/
-}
-
-#header {
+.header {
   position: fixed;
   top: 0;
   /*bottom: 0;*/
-  left: 0;
-  right: 0;
+  // left: 0;
+  // right: 0;
+  max-width: 100%;
   z-index: 999;
-  background-color: #FFF;
+  background-color: $lightest;
   max-height: 125px;
-  /*background-color: papayawhip;*/
-  /*background-color: floralwhite;*/
-  /*background-color: oldlace;*/
-  /*background-color: snow;*/
-  /*background-color: white;*/
-}
 
-#about, #portfolio {
-  width: 75%;
-  margin: 0 auto;
-  /*background: url("https://pixabay.com/get/e034b00f28f51c22d9584518a34f4391e073e7dc04b0154692f0c171afeeb0/polystyrene-911001_1920.jpg") lightblue;*/
-  /*border: 1px solid red;*/
-  /*padding: 1em 0;*/
-}
-
-#about, #portfolio, #footer {
-  /*background: url(cloth-569222.jpg) white;*/
-  /*padding: 1em 0;*/
-}
-
-#footer {
-  /*margin-top: 1em;*/
-}
-
-/*  Portfolio header is a flex item!  */
-.section-heading {
-  /*border: 1px solid red;*/
-  /*margin-top: 1em;*/
-  /*padding: 0 0.25em;*/
-  flex-basis: 100%;
-  text-align: center;
-  /*width: 100%;*/
-}
-
-.btn-toolbar, .btn-group {
-  /*border: 1px solid green;*/
-}
-
-.text-link {
-  color: #9A4827;
-}
-.text-link:hover {
-  color: #9A4827;
-}
-
-.btn {
-  color: #9A4827;
-}
-.btn:hover {
-  color: #9A4827;
-  background-color: #FFF;
-  text-decoration: underline;
-}
-
-
-/*  MODULES
- * design to exist as standalone components
- * use primarily class selectors (think semantics!)
- */
-
-.header {
-  border-bottom: 1px solid lavender;
-  box-shadow: 0 0.1em 5px -2px #9A4827;
+  border-bottom: 1px solid $page-outline;
+  box-shadow: 0 0.1em 5px -2px $shadow;
   display: flex;
   justify-content: space-around;
   /*align-items: baseline;*/
@@ -236,17 +124,58 @@ h1, h2, h3, h4, h5, h6 {
 .title-desc {
   /*text-align: center;*/
   margin-top: 0.5em;
-  color: #9A4827;
+  color: $link-colour;
   /*border-top: 1px solid #9A4827;*/
 }
 
-/*
- *  About
- */
 
+
+
+/*  Portfolio header is a flex item!  */
+.section-heading {
+  /*border: 1px solid red;*/
+  /*margin-top: 1em;*/
+  /*padding: 0 0.25em;*/
+  flex-basis: 100%;
+  text-align: center;
+  /*width: 100%;*/
+}
+
+.btn-toolbar, .btn-group {
+  /*border: 1px solid green;*/
+}
+
+.text-link {
+  color: $link-colour;
+}
+.text-link:hover {
+  color: $link-colour;
+}
+
+.btn {
+  color: $link-colour;
+}
+.btn:hover {
+  color: $link-colour;
+  background-color: $lightest;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.project {
+  background-color: #FFF;
+}
 
 .modal-body {
-  background: #FFF url("./../img/current/transparent textures/arches.png");
+  background: $lightest url($body-texture);
 }
 
 .me {
@@ -256,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   /*height: 75vh;*/
   /*background: #9A4827 url("https://pixabay.com/static/uploads/photo/2016/09/08/21/20/transparent-1655599_640.png");*/
   /*background: #9A4827 url("https://pixabay.com/get/ec32b40b2dfc1c22d2524518a34f4391e073e7dc04b0154692f0c67ca6eab3/red-575458_1280.png");*/
-  background: #9A4827 url("./../img/current/transparent textures/egg-shell.png");
+  background: $brightest url($hero-texture);
   /*opacity: 0.8;*/
   /*background-size: contain;*/
   /*padding: 1em 0;*/
@@ -284,22 +213,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .me-header > .section-heading {
-  color: #000;
+  // color: $darkest;
 }
 
 .me-words {
   /*border: 5px solid #9A4827;*/
   border-radius: 10px;
   flex: 1 1 calc(75%)/2;
-  background-color: #FFF;
+  background-color: $lightest;
 }
 
 .me-img {
   /*background-color: #9A4827;*/
-  border: 1px solid #000;
+  border: 1px solid $darkest;
   border-radius: 150px;
   width: 50%;
-  opacity: 0.6;
+  // opacity: 0.6;
   transform: translateX(50%);
 }
 
@@ -359,25 +288,25 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   text-align: center;
   margin: 1em 0;
    /*padding: 0.25em;*/
-  border: 1px solid lavender;
+  border: 1px solid $project-outline;
   border-radius: 10px;
-  box-shadow: 0.1em 0.15em 5px -2px #9A4827;
+  box-shadow: 0.1em 0.15em 5px -2px $shadow;
   /*flex: 1 1 50%;*/
   max-width: 500px;
   cursor: pointer;
-  background-color: #FFF;
+  background-color: $lightest;
 }
 
 .project-img {
   max-width: 100%;
   border-radius: 10px;
-  border: 1px solid lavender;
+  border: 1px solid $project-outline;
   /*height: 170px;*/
 }
 
 .project:hover {
   /*border: 1px solid #9A4827;*/
-  box-shadow: 0.1em 0.15em 5px 2px #9A4827;
+  box-shadow: 0.1em 0.15em 5px 2px $shadow;
 }
 
 
@@ -400,7 +329,7 @@ neg numbers okay, sharp blur = 0, negs ok for spread
  */
 
 .footer {
-  border-top: 1px solid lavender;
+  border-top: 1px solid $page-outline;
   padding: 1em 0;
 }
 
@@ -424,9 +353,9 @@ neg numbers okay, sharp blur = 0, negs ok for spread
   stroke-width: 1%;
   /*stroke: #9A4827;*/
   /*stroke: #4B4B4B;*/
-  stroke: #000000;
+  stroke: $darkest;
   /*fill: #000000;*/
-  fill: #9A4827;
+  fill: $icon;
   fill-opacity: 0.95;
   /*border: 1px solid purple;*/
   transform: perspective(1px) translateY(25%);
