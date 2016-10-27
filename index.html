@@ -6,17 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S.KERR</title>
 
-  <!-- <link rel="stylesheet" href="src/css/normalize.css"></link> -->
-  <!-- <link rel="stylesheet" href="src/css/bootstrap-theme.min.css"> -->
   <link rel="stylesheet" href="src/css/bootstrap-theme.css">
-  <!-- <link rel="stylesheet" href="src/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="src/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Actor|Amaranth|Andika|Antic|Asul|Average+Sans|Buenard|Cambo|Carrois+Gothic|Catamaran|Dosis|El+Messiri:700|Fanwood+Text|Fauna+One|Fenix|Fresca|Gabriela|Gafata|Galdeano|Gilda+Display|Heebo|Hind+Guntur|Hind+Madurai|Imprima|Istok+Web|Jacques+Francois|Judson|Kite+One|Laila|Lato|Maitree|Marcellus|Martel+Sans|Molengo|Montaga|Noto+Sans|Noto+Serif|Open+Sans|Ovo|Philosopher|Pontano+Sans|Prociono|Proza+Libre|Quattrocento|Rambla|Rubik|Ruluko|Snippet|Sorts+Mill+Goudy|Ubuntu" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="build/css/style.css"> -->
-  <!-- <link rel="stylesheet" href="build/css/sticky.css"> -->
-  <!-- <link rel="stylesheet" href="build/css/try2.css"> -->
-  <!-- <link rel="stylesheet" href="build/css/sass-style.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri:700%7CLaila" rel="stylesheet">
   <link rel="stylesheet" href="build/css/output.css">
 </head>
 <body>
@@ -99,36 +92,36 @@
 
 <!-- TODO LIST
   TODO: post prod - how to View Page for Tournament and Quiz (40)
-  TODO: media queries (5)
   TODO: write real content!!! (6)
   TODO: optimize images properly(3)
-  TODO: cleanup - Figure out links and scripts (30)
   TODO: post prod - how to make header smaller on scroll (35)
   TODO: post prod - squish & stick header on scroll (32)
 -->
-<div class="outer-body">
-</div>
+
+  <!-- separate div for iOS fixed background issue -->
+  <div class="outer-body">
+  </div>
+
   <div id="body" class="body">
 
-    <header class="header-top">
-    </header>
+    <!-- div for when sticky/squishy header is implemented -->
+<!--     <header class="header-top">
+    </header> -->
 
-    <aside class="about">
+    <header class="about">
 
-      <!-- <div class="header"> -->
-        <div class="header-logo">
-          <img class="logo" alt="logo" src="build/img/hipster_logo-250x200.png">
-        </div>
+      <div class="header-logo">
+        <img class="logo" alt="logo" src="build/img/hipster_logo-250x200.png">
+      </div>
 
-        <div class="header-title">
-          <h1 class="title name">
-            Shauna Kerr
-          </h1>
-          <h4 class="title desc">
-            Front End Developer
-          </h4>
-        </div>
-      <!-- </div> -->
+      <div class="header-title">
+        <h1 class="title name">
+          Shauna Kerr
+        </h1>
+        <h4 class="title desc">
+          Front End Developer
+        </h4>
+      </div>
 
       <div class="about-para-div">
         <p class="about-para">
@@ -136,7 +129,7 @@
         </p>
       </div>
 
-    </aside>
+    </header>
 
     <section class="portfolio">
       <h2  class="portfolio-header section-heading">On Display</h2>
@@ -265,8 +258,6 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <!-- <script src="src/js/jquery-3.1.1.js"></script> -->
-  <!-- <script src="src/js/bootstrap.min.js"></script> -->
   <script src="src/js/bootstrap.js"></script>
   <script src="src/js/header.js"></script>
 </body>

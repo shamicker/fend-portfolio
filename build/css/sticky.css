@@ -65,11 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 80%;
   display: block;
   margin: 1em auto 0;
-  /* max-height and margin combine to maintain aspect ratio! */
-  /*max-height: 100%;*/
-  /*max-height: calc(100% - 10px);*/
-  border-radius: 10px;
-  /*margin: 0.25em;*/ }
+  border-radius: 10px; }
 
 .header-title {
   flex-basis: 100%;
@@ -82,19 +78,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   margin: 0;
-  /*padding-right: 10px;*/
-  /*padding: 5px 0 0 10px;*/
   text-align: center; }
 
 .name {
-  font-size: 3em;
-  /*border-bottom: 1px solid #9A4827;*/ }
+  font-size: 3em; }
 
 .desc {
   font-size: 1.25em;
   font-variant: small-caps;
-  color: #23b5d3;
-  /*border-top: 1px solid #9A4827;*/ }
+  color: #23b5d3; }
 
 .about-para-div {
   flex: 1 1 100%;
@@ -102,20 +94,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px; }
 
 .about-para {
-  /*order: 2;*/
-  /*margin: 0 1em;*/
   padding: 1em;
   text-indent: 1em;
-  /*margin-bottom: 0;*/
-  /*margin-top: 0;*/
   text-align: justify;
-  /*background-color: white;*/
-  /*color: black;*/
-  /*opacity: 1;*/
-  /*z-index: 99;*/
   background: #f1e9dc;
-  /*outline: 3px solid #9A4827;*/
-  /*outline-style: solid;*/
   border-radius: 10px;
   max-width: 375px;
   margin: 1em auto; }
@@ -128,17 +110,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around; }
 
 .section-heading {
-  /*border: 1px solid red;*/
-  /*margin-top: 1em;*/
   padding: 0 0.25em;
   flex-basis: 100%;
-  text-align: center;
-  /*width: 100%;*/ }
+  text-align: center; }
 
 .project {
   text-align: center;
   margin: 1em 0;
-  /*padding: 0.25em;*/
   border: 1px solid #8ebac8;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #d3a588;
@@ -149,11 +127,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid #8ebac8;
-  /*height: 170px;*/
   margin: 0 auto; }
 
 .project:hover {
-  /*border: 1px solid #9A4827;*/
   box-shadow: 0.1em 0.15em 5px 2px #d3a588; }
 
 /* MODAL  modifications ****************************************/
@@ -161,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.75em;
   text-align: right;
   padding: 0.25em;
-  /*border: 1px solid green;*/
   font-style: italic; }
 
 .modal-title {
@@ -206,15 +181,20 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between; }
   .project {
     margin: 1em;
-    max-width: calc(50% - 2em); } }
+    max-width: calc(50% - 2em); }
+  .soc-btn-group {
+    max-width: 400px; } }
 
 @media screen and (min-width: 900px) {
+  .about {
+    justify-content: center; }
   .header-title {
     margin: 0 0 2em; }
   .header-logo, .about-para-div {
-    flex: 1 1 50%; }
+    flex: 1 1 30%; }
   .logo {
-    max-width: 55%; } }
+    max-width: 55%;
+    max-height: 170px; } }
 
 @media screen and (min-width: 1250px) {
   .project {
