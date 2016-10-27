@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px; }
 
 .modal-header, .modal-footer {
-  background: url("./../img/transparent textures/skulls.png"); }
+  background: #f4efe5 url("./../img/transparent textures/skulls.png"); }
 
 /* FOOTER  **************************************************/
 .footer {
