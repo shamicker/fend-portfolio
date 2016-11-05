@@ -6,12 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S.KERR</title>
 
+  <!-- <link rel="stylesheet" href="src/css/normalize.css"></link> -->
+  <!-- <link rel="stylesheet" href="src/css/bootstrap-theme.min.css"> -->
   <link rel="stylesheet" href="src/css/bootstrap-theme.css">
+  <!-- <link rel="stylesheet" href="src/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="src/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css">
-  <link href="https://fonts.googleapis.com/css?family=El+Messiri:700%7CLaila" rel="stylesheet">
-  <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="build/css/output.css">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Amaranth|Andika|Antic|Asul|Average+Sans|Buenard|Cambo|Carrois+Gothic|Catamaran|Dosis|El+Messiri:700|Fanwood+Text|Fauna+One|Fenix|Fresca|Gabriela|Gafata|Galdeano|Gilda+Display|Heebo|Hind+Guntur|Hind+Madurai|Imprima|Istok+Web|Jacques+Francois|Judson|Kite+One|Laila|Lato|Maitree|Marcellus|Martel+Sans|Molengo|Montaga|Noto+Sans|Noto+Serif|Open+Sans|Ovo|Philosopher|Pontano+Sans|Prociono|Proza+Libre|Quattrocento|Rambla|Rubik|Ruluko|Snippet|Sorts+Mill+Goudy|Ubuntu" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="build/css/style.css"> -->
+  <!-- <link rel="stylesheet" href="src/css/main.css"> -->
+  <!-- <link rel="stylesheet" href="build/css/try2.css"> -->
+  <link rel="stylesheet" href="build/css/sass-style.css">
 </head>
 <body>
 
@@ -93,37 +98,35 @@
 
 <!-- TODO LIST
   TODO: post prod - how to View Page for Tournament and Quiz (40)
+  TODO: last project sizing (1)
+  TODO: media queries (5)
+  TODO: grunt logo (4)
   TODO: write real content!!! (6)
   TODO: optimize images properly(3)
-  TODO: add favicon!! (16)
-  TODO: research meta viewport for diff devices!! (7)
+  TODO: cleanup - Figure out links and scripts (30)
   TODO: post prod - how to make header smaller on scroll (35)
-  TODO: post prod - squish & stick header on scroll (32)
 -->
 
-  <!-- separate div for iOS fixed background issue -->
-  <div class="outer-body">
-  </div>
+  <header class="header">
+    <div class="header-logo">
+      <img class="logo" alt="logo" src="build/img/hipster_logo-250x200.png">
+    </div>
+    <div class="header-title">
+      <h1 class="title title-name">
+        <span class="first-name">Shauna</span>
+        <span class="last-name"> Kerr</span>
+      </h1>
+      <h4 class="title title-desc">
+        Front End Developer
+      </h4>
+    </div>
+  </header>
 
-  <div id="body" class="body">
-
-    <!-- div for when sticky/squishy header is implemented -->
-<!--     <header class="header-top">
-    </header> -->
-
-    <header class="about">
-
-      <div class="header-logo">
-        <img class="logo" alt="logo" src="build/img/hipster_logo-250x200.png">
-      </div>
-
-      <div class="header-title">
-        <h1 class="title name">
-          Shauna Kerr
-        </h1>
-        <h4 class="title desc">
-          Front End Developer
-        </h4>
+  <div class="body">
+    <aside class="about">
+      <div class="about-header">
+        <h2 class="section-heading">About</h2>
+        <img class="about-img" srcset="" src="build/img/sketch.jpg" alt="image of me">
       </div>
 
       <div class="about-para-div">
@@ -131,24 +134,23 @@
           Hi, my name is Shauna. I am a student and an alumna of <a class="text-link" href="https://www.udacity.com/us" target="_blank">Udacity</a>, an online education website. This is just the beginning of my coding adventures! Currently my plan is to learn front-end and then back-end web development, and then continue on learning from there.
         </p>
       </div>
-
-    </header>
+    </aside>
 
     <section class="portfolio">
       <h2  class="portfolio-header section-heading">On Display</h2>
 
       <div class="project" data-toggle="modal" data-target="#project1">
-        <img class="project-img" srcset="build/img/responsives/IPND_Quiz2-320x240.png 320w, build/img/responsives/IPND_Quiz2-640x360.png 640w, build/img/responsives/IPND_Quiz2-960x540.png 960w, build/img/responsives/IPND_Quiz2-1280x800.png 1280w" src="build/img/responsives/IPND_Quiz2-320x240.png" sizes="(max-width: 599px) 80vw, 40vw" alt="preview of my fill-in-the-blanks quiz project">
+        <img class="project-img" srcset="build/img/responsives/IPND_Quiz2-640x360.png 1x, build/img/responsives/IPND_Quiz2-960x540.png 2x" src="build/img/responsives/IPND_Quiz2-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
         <h3>Fill in the Blank Quiz</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project2">
-        <img class="project-img" srcset="build/img/responsives/IPND_Trailers-320x240.png 320w, build/img/responsives/IPND_Trailers-640x360.png 640w, build/img/responsives/IPND_Trailers-960x540.png 960w, build/img/responsives/IPND_Trailers-1280x800.png 1280w" src="build/img/responsives/IPND_Trailers-320x240.png" sizes="(max-width: 599px) 80vw, 40vw" alt="preview of my movie trailer website project">
+        <img class="project-img" srcset="build/img/responsives/IPND_Trailers-640x360.png 1x, build/img/responsives/IPND_Trailers-960x540.png 2x" src="build/img/responsives/IPND_Trailers-640x360.png" alt="preview of my movie trailer website project">
         <h3>Movie Trailer Website</h3>
       </div>
 
       <div class="project" data-toggle="modal" data-target="#project3">
-        <img class="project-img" srcset="build/img/responsives/IPND_Tournament-320x240.png 320w, build/img/responsives/IPND_Tournament-640x360.png 640w, build/img/responsives/IPND_Tournament-960x540.png 960w, build/img/responsives/IPND_Tournament-1280x800.png 1280w" src="build/img/responsives/IPND_Tournament-320x240.png" sizes="(max-width: 599px) 80vw, 40vw" alt="preview of my multi-tournament project">
+        <img class="project-img" srcset="build/img/responsives/IPND_Tournament-640x360.png 1x, build/img/responsives/IPND_Tournament-960x540.png 2x" src="build/img/responsives/IPND_Tournament-640x360.png"  alt="preview of my multi-tournament project">
         <h3>Tournament Database</h3>
       </div>
     </section>
@@ -193,7 +195,7 @@
         </div>
         <div class="modal-body">
           <figure class="project-fig">
-            <img class="img-responsive project-img" srcset="build/img/responsives/IPND_Quiz2-320x240.png 320w, build/img/responsives/IPND_Quiz2-640x360.png 640w, build/img/responsives/IPND_Quiz2-960x540.png 960w, build/img/responsives/IPND_Quiz2-1280x800.png 1280w" src="build/img/responsives/IPND_Quiz2-320x240.png" sizes="(max-width: 700px) 75vw, 500px" alt="preview of my fill-in-the-blanks quiz project">
+            <img class="img-responsive project-img" srcset="build/img/responsives/IPND_Quiz2-640x360.png 1x, build/img/responsives/IPND_Quiz2-960x540.png 2x" src="build/img/responsives/IPND_Quiz2-640x360.png" alt="preview of my fill-in-the-blanks quiz project">
             <figcaption class="figcaption">
               Screenshot of the game in play.
             </figcaption>
@@ -218,7 +220,7 @@
         </div>
         <div class="modal-body">
           <figure class="project-fig">
-            <img class="img-responsive project-img" srcset="build/img/responsives/IPND_Trailers-320x240.png 320w, build/img/responsives/IPND_Trailers-640x360.png 640w, build/img/responsives/IPND_Trailers-960x540.png 960w, build/img/responsives/IPND_Trailers-1280x800.png 1280w" sizes="(max-width: 700px) 75vw, 500px" src="src/img/current/IPND_Trailers-320x240.png" alt="preview of my movie trailer website project">
+            <img class="img-responsive project-img" alt="preview of my movie trailer website project" src="src/img/current/IPND_Trailers.png">
             <figcaption class="figcaption">
               Screenshot of the website 'in action'.
             </figcaption>
@@ -243,7 +245,7 @@
         </div>
         <div class="modal-body">
           <figure class="project-fig">
-            <img class="img-responsive project-img" alt="preview of my multi-tournament project" srcset="build/img/responsives/IPND_Tournament-320x240.png 320w, build/img/responsives/IPND_Tournament-640x360.png 640w, build/img/responsives/IPND_Tournament-960x540.png 960w, build/img/responsives/IPND_Tournament-1280x800.png 1280w" sizes="(max-width: 700px) 75vw, 500px" src="build/img/responsives/IPND_Tournament-320x240.png" >
+            <img class="img-responsive project-img" alt="preview of my multi-tournament project" src="src/img/current/IPND_Tournament.png">
             <figcaption class="figcaption">
               Screenshot of <a class="text-link" href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345408/modules/000134540875460/lessons/6797198607/concepts/34915387870923#" target="_blank">a video lesson</a> from <a class="text-link" href="https://www.udacity.com/course/intro-to-relational-databases--ud197" target="_blank">Udacity's Relational Databases course</a> (0:55).
             </figcaption>
@@ -261,8 +263,10 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- <script src="src/js/jquery-3.1.1.js"></script> -->
+  <!-- <script src="src/js/bootstrap.min.js"></script> -->
   <script src="src/js/bootstrap.js"></script>
-  <script src="src/js/header.js"></script>
+  <!-- <script src="src/js/app.js"></script> -->
 </body>
 
 </html>
