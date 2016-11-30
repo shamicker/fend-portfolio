@@ -65,7 +65,7 @@ module.exports = function(grunt) {
           imageAlpha: true,
           quitAfter: true
         },
-        src: ['build/img/']
+        src: ['build/img/*']
       }
     }
 
