@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           hostname: 'localhost',
-          port: 4030,
+          port: 4020,
           // base: 'build/',
           // locale: en_GB,
           // threshold: 70

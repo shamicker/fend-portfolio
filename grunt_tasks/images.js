@@ -55,7 +55,6 @@ module.exports = function(grunt) {
           dest: 'build/img/'
         }]
       }
-
     },
 
     imageoptim: {

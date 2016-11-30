@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/img/current/',
-          src: ['sketch.jpg', 'transparent textures/*', 'favicon.ico'],
+          src: ['sketch.jpg', 'transparent textures/*', 'favicon.png'],
           dest: 'build/img/'
         }]
       }
