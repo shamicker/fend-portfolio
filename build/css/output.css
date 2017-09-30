@@ -2,13 +2,12 @@
  * BASICS
  * default stylings: headings, links, fonts, body backgrounds...
  ************************************************************/
-* {
-  box-sizing: border-box; }
-
 html, body {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  font-family: 'Laila', serif; }
+  font-family: 'Laila', serif;
+}
 
 /* fixed background on iOS mobiles */
 .outer-body {
@@ -16,22 +15,26 @@ html, body {
   height: 100%;
   position: fixed;
   z-index: -99;
-  background: #f4efe5 url("./../img/transparent textures/skulls.png"); }
+  background: #f4efe5 url("./../img/transparent textures/skulls.png");
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'El Messiri', sans-serif; }
+  font-family: 'El Messiri', sans-serif;
+}
 
 /**************************************************************
  * MODULES
  * stand-alone items
  **************************************************************/
 .text-link, .text-link:hover, .btn {
-  color: #23b5d3; }
+  color: #23b5d3;
+}
 
 .btn:hover {
   color: #23b5d3;
   background-color: #f4efe5;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 /************************************************************
  *  LAYOUT
@@ -48,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 /* ABOUT  *************************************************/
 .about {
@@ -61,18 +65,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0;
   -ms-flex-align: center;
       align-items: center;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .header-logo {
   -ms-flex-order: 2;
       order: 2;
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 .logo {
   max-width: 80%;
   display: block;
   margin: 1em auto 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .header-title {
   -ms-flex-preferred-size: 100%;
@@ -86,26 +93,31 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: #f4efe5;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .title {
   margin: 0;
-  text-align: center; }
+  text-align: center;
+}
 
 .name {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .desc {
   font-size: 1.25em;
   font-variant: small-caps;
-  color: #23b5d3; }
+  color: #23b5d3;
+}
 
 .about-para-div {
   -ms-flex: 1 1 100%;
       flex: 1 1 100%;
   -ms-flex-order: 3;
       order: 3;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .about-para {
   padding: 1em;
@@ -114,7 +126,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #f4efe5;
   border-radius: 10px;
   max-width: 375px;
-  margin: 1em auto; }
+  margin: 1em auto;
+}
 
 /* PORTFOLIO  ***********************************************/
 .portfolio {
@@ -124,13 +137,15 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+}
 
 .section-heading {
   padding: 0 0.25em;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .project {
   text-align: center;
@@ -139,36 +154,47 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #d3a588;
   cursor: pointer;
-  background-color: #f4efe5; }
+  background-color: #f4efe5;
+}
 
 .project-img {
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid #8ebac8;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .project:hover {
-  box-shadow: 0.1em 0.15em 5px 2px #d3a588; }
+  box-shadow: 0.1em 0.15em 5px 2px #d3a588;
+}
 
 /* MODAL  modifications ****************************************/
 .figcaption {
   font-size: 0.75em;
   text-align: right;
   padding: 0.25em;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .modal-title {
   font-size: larger;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
-.modal-header, .modal-footer {
-  background: #f4efe5 url("./../img/transparent textures/skulls.png"); }
+.modal-content {
+  background: #f4efe5 url("./../img/transparent textures/skulls.png");
+}
+
+.modal-body {
+  background: #FFF;
+}
 
 /* FOOTER  **************************************************/
 .footer {
   background: #f4efe5;
   padding: 1em 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .soc-btn-group {
   width: 75%;
@@ -176,7 +202,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+}
 
 .soc-btn {
   display: -ms-flexbox;
@@ -186,43 +213,57 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-align: center;
       align-items: center;
   min-width: 48px;
-  min-height: 48px; }
+  min-height: 48px;
+}
 
 .icon {
   width: 30px;
   height: 30px;
   stroke-width: 2%;
   stroke: #4B4B4B;
-  fill: #9a4827; }
+  fill: #9a4827;
+}
 
 .icon:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /* MEDIA QUERIES  ********************************************/
 @media screen and (min-width: 600px) {
   .portfolio {
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+  }
   .project {
     margin: 1em;
-    max-width: calc(50% - 2em); }
+    max-width: calc(50% - 2em);
+  }
   .soc-btn-group {
-    max-width: 400px; } }
+    max-width: 400px;
+  }
+}
 
 @media screen and (min-width: 900px) {
   .about {
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+  }
   .header-title {
-    margin: 0 0 2em; }
+    margin: 0 0 2em;
+  }
   .header-logo, .about-para-div {
     -ms-flex: 1 1 30%;
-        flex: 1 1 30%; }
+        flex: 1 1 30%;
+  }
   .logo {
     max-width: 55%;
-    max-height: 170px; } }
+    max-height: 170px;
+  }
+}
 
 @media screen and (min-width: 1250px) {
   .project {
     margin: 2em;
-    max-width: calc(33.33% - 4em); } }
+    max-width: calc(33.33% - 4em);
+  }
+}

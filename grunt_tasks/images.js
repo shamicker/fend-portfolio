@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
     responsive_images: {
 
-      IPND: {
+      projects: {
         options: {
           sizes: [
             {
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/img/current',
-          src: ['./IPND_*.{jpg,png}'],
+          src: ['./IPND_*.{jpg,png}', './FEND_*.{jpg,png}'],
           dest: 'build/img/responsives'
         }]
       },

@@ -173,10 +173,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-around;
   /*align-items: baseline;*/
-
 }
 
-.header-logo, .header-title {
+.header-banner {
+  display: flex;
+}
+
+.header-logo,
+.header-title {
   /*border: 1px solid blue;*/
   /*flex: 1 1 50%;*/
   display: flex;

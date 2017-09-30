@@ -23,13 +23,17 @@ module.exports = function(grunt) {
           files: 'index.html',
           tasks: ['watch']
         },
+        css: {
+          files: 'src/css/main.css',
+          tasks: ['postcss', 'csslint']
+        },
         scss: {
           files: ['src/css/*.scss'],
           tasks: ['sass', 'postcss']
         },
         csslint: {
           files: "<%= postcss.dist.dest %>",
-          tasks: ['csslint']
+          tasks: ['csslint','watch']
         },
         images: {
           files: ['src/img/**/*.{svg,jpg,jpeg,png}', 'build/img/**/*.{svg, jpg, jpeg, png}'],

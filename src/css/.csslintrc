@@ -1,0 +1,7 @@
+{
+    // ignore vendor prefix ms-web-pack: distribute
+    "known-properties": false,
+    "box-sizing": false,
+    "duplicate-background-images": false,
+    "box-model": false
+}

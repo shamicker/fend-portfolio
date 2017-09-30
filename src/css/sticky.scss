@@ -1,6 +1,6 @@
 //***************************************************************
- // * SCSS VARIABLES
- // *************************************************************
+// * SCSS VARIABLES
+// *************************************************************
 
 // colour palette ***************
 $darkest: #000100;
@@ -33,12 +33,12 @@ $radius: 10px;
  * BASICS
  * default stylings: headings, links, fonts, body backgrounds...
  ************************************************************/
-* {
-	box-sizing: border-box;
-  // border: 1px solid silver;
-}
+// * {
+//   border: 1px solid silver;
+// }
 
 html, body {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
 	font-family: 'Laila', serif;
@@ -229,8 +229,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: $radius;
 }
 
-.modal-header, .modal-footer {
+.modal-content {
   background: $lightest url($body-texture);
+}
+
+.modal-body {
+  background: #FFF;
 }
 
 /* FOOTER  **************************************************/

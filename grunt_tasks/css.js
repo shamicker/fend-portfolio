@@ -10,25 +10,29 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer')({browsers: ['last 2 versions']})
+        ],
+        // map: true
+        // failOnError: true
+      },
+      dist: {
+        src: 'build/css/sticky.css',
+        dest: 'build/css/output.css'
+      }
+    },
+
     csslint: {
       options: {
+        csslintrc: 'src/css/.csslintrc'
         // quiet: true
         // gradients: 2
       },
       // src: ['src/css/main.css']
       files: {
-        src: ["<%= postcss.dist.dest %>"]
-      }
-    },
-
-    postcss: {
-      options: {
-        processors: [require('autoprefixer')({browsers: 'last 2 versions'})]
-        // failOnError: true
-      },
-      dist: {
-        src: ["<%= sass.dist.dest %>"],
-        dest: 'build/css/output.css'
+        src: 'build/css/output.css'
       }
     }
 
