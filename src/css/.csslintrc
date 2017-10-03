@@ -3,5 +3,5 @@
     "known-properties": false,
     "box-sizing": false,
     "duplicate-background-images": false,
-    "box-model": false
+    "zero-units": false
 }

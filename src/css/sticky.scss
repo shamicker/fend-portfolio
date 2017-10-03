@@ -30,7 +30,7 @@ $body-texture: "./../img/transparent textures/skulls.png";
 $hero-texture: "./../img/transparent textures/egg-shell.png";
 
 // misc ***************************
-$header-height: 0;
+$header-height: 0px;
 $radius: 10px;
 
 /***********************************************************
@@ -62,6 +62,10 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'El Messiri', sans-serif;
+}
+
+p {
+  margin: 0px;
 }
 
 /**************************************************************
@@ -107,14 +111,11 @@ h1, h2, h3, h4, h5, h6 {
 /* flex container */
 .body {
   width: 80%;
-  margin: $header-height auto 0;
-  padding: 2.5em 0 0;
+  margin: $header-height auto 0px;
+  padding: 2.5em 0px 0px;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   border-radius: $radius;
-  // border: 5px solid $sub-bright-light;
 }
 
 
@@ -122,11 +123,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .about {
-  // display: flex;
-  // flex-flow: column;
-  // justify-content: space-around;
-  // margin: 1em 0 0;
-  // align-items: center;
   border-radius: $radius;
 }
 
@@ -134,40 +130,33 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background: $lightest;
   display: flex;
-  // justify-content:
-  // align-items: stretch;
   max-height: 120px;
 }
 
 .header-logo {
+  display: none;
   flex: 1 1 auto;
-  // order: 2;
-  margin: 1em 0;
+  margin: 1em 0px;
   max-height: 100%;
 }
 
 .logo {
-  // max-width: 100%;
   max-height: 100%;
   display: block;
-  // margin: 1em auto 0;
-  margin: 0 auto;
+  margin: 0px auto;
   border-radius: 10px;
 }
 
 .header-title {
-  flex: 4 2 auto;
-  // order: 1;
+  flex: 2 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: space-around;
-  // height: 100%;
   border-radius: $radius;
 }
 
 .title {
-  margin: 0;
+  margin: 0px;
   text-align: center;
 }
 
@@ -182,10 +171,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-para-div {
-  // flex: 1 1 100%;
   width: 100%;
   order: 3;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  max-height: 250px;
+}
+
+.headshot {
+  display: none;
+  border-radius: $radius*10;
 }
 
 .about-para {
@@ -195,13 +192,12 @@ h1, h2, h3, h4, h5, h6 {
   background: $lightest;
   border-radius: $radius;
   max-width: 375px;
-  margin: 1em auto;
 }
 
 /* PORTFOLIO  ***********************************************/
 
 .portfolio {
-  padding: 1em 0;
+  padding: 1em 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -215,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project {
   text-align: center;
-  margin: 1em 0;
+  margin: 1em 0px;
   border: 1px solid $project-outline;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px $shadow;
@@ -227,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid $project-outline;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .project:hover {
@@ -260,13 +256,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background: $lightest;
-  padding: 1em 0;
+  padding: 1em 0px;
   border-radius: $radius;
 }
 
 .soc-btn-group {
   width: 75%;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -293,9 +289,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* MEDIA QUERIES  ********************************************/
 
-@media screen and (max-width: 494px) {
-  .header-logo {
-    display: none;
+@media screen and (min-width: 495px) {
+  .header-logo,
+  .headshot {
+    display: block;
+  }
+  .headshot {
+    max-width: 125px;
+    max-height: 125px;
   }
 }
 
@@ -312,6 +313,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .headshot {
+    max-width: 175px;
+    max-height: 175px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .header-title {
     flex-direction: row;
@@ -324,5 +332,9 @@ h1, h2, h3, h4, h5, h6 {
   .project {
     margin: 2em;
     max-width: calc(33.33% - 4em);
+  }
+  .headshot {
+    max-width: 220px;
+    max-height: 220px;
   }
 }

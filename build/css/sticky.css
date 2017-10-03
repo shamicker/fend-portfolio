@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'El Messiri', sans-serif;
 }
 
+p {
+  margin: 0px;
+}
+
 /**************************************************************
  * MODULES
  * stand-alone items
@@ -45,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 /* flex container */
 .body {
   width: 80%;
-  margin: 0 auto 0;
-  padding: 2.5em 0 0;
+  margin: 0px auto 0px;
+  padding: 2.5em 0px 0px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -65,20 +69,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo {
+  display: none;
   flex: 1 1 auto;
-  margin: 1em 0;
+  margin: 1em 0px;
   max-height: 100%;
 }
 
 .logo {
   max-height: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 0px auto;
   border-radius: 10px;
 }
 
 .header-title {
-  flex: 4 2 auto;
+  flex: 2 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  margin: 0;
+  margin: 0px;
   text-align: center;
 }
 
@@ -104,6 +109,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   order: 3;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  max-height: 250px;
+}
+
+.headshot {
+  display: none;
+  border-radius: 100px;
 }
 
 .about-para {
@@ -113,12 +127,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #f4efe5;
   border-radius: 10px;
   max-width: 375px;
-  margin: 1em auto;
 }
 
 /* PORTFOLIO  ***********************************************/
 .portfolio {
-  padding: 1em 0;
+  padding: 1em 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -132,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project {
   text-align: center;
-  margin: 1em 0;
+  margin: 1em 0px;
   border: 1px solid #8ebac8;
   border-radius: 10px;
   box-shadow: 0.1em 0.15em 5px -2px #d3a588;
@@ -144,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid #8ebac8;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .project:hover {
@@ -175,13 +188,13 @@ h1, h2, h3, h4, h5, h6 {
 /* FOOTER  **************************************************/
 .footer {
   background: #f4efe5;
-  padding: 1em 0;
+  padding: 1em 0px;
   border-radius: 10px;
 }
 
 .soc-btn-group {
   width: 75%;
-  margin: 0 auto;
+  margin: 0px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -207,9 +220,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* MEDIA QUERIES  ********************************************/
-@media screen and (max-width: 494px) {
-  .header-logo {
-    display: none;
+@media screen and (min-width: 495px) {
+  .header-logo,
+  .headshot {
+    display: block;
+  }
+  .headshot {
+    max-width: 125px;
+    max-height: 125px;
   }
 }
 
@@ -226,6 +244,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .headshot {
+    max-width: 175px;
+    max-height: 175px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .header-title {
     flex-direction: row;
@@ -238,5 +263,9 @@ h1, h2, h3, h4, h5, h6 {
   .project {
     margin: 2em;
     max-width: calc(33.33% - 4em);
+  }
+  .headshot {
+    max-width: 220px;
+    max-height: 220px;
   }
 }

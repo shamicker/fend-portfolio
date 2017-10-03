@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         }]
       },
 
-      logo: {
+      me: {
         options: {
           sizes: [{
             width: 250,
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/img/current',
-          src: ['hipster_logo.png'],
+          src: ['hipster_logo.png', 'sketch.jpg'],
           dest: 'build/img/'
         }]
       }
