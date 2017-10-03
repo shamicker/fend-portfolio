@@ -56,43 +56,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ABOUT  *************************************************/
 .about {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 1em 0 0;
-  -ms-flex-align: center;
-      align-items: center;
   border-radius: 10px;
 }
 
+.header-banner {
+  width: 100%;
+  background: #f4efe5;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 120px;
+}
+
 .header-logo {
-  -ms-flex-order: 2;
-      order: 2;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
   margin: 1em 0;
+  max-height: 100%;
 }
 
 .logo {
-  max-width: 80%;
+  max-height: 100%;
   display: block;
-  margin: 1em auto 0;
+  margin: 0 auto;
   border-radius: 10px;
 }
 
 .header-title {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -ms-flex-order: 1;
-      order: 1;
+  -ms-flex: 4 2 auto;
+      flex: 4 2 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #f4efe5;
+  -ms-flex-pack: center;
+      justify-content: center;
   border-radius: 10px;
 }
 
@@ -112,8 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-para-div {
-  -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
+  width: 100%;
   -ms-flex-order: 3;
       order: 3;
   border-radius: 10px;
@@ -229,6 +225,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* MEDIA QUERIES  ********************************************/
+@media screen and (max-width: 494px) {
+  .header-logo {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .portfolio {
     -ms-flex-pack: justify;
@@ -243,21 +245,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 900px) {
-  .about {
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
+@media screen and (min-width: 1000px) {
   .header-title {
-    margin: 0 0 2em;
-  }
-  .header-logo, .about-para-div {
-    -ms-flex: 1 1 30%;
-        flex: 1 1 30%;
-  }
-  .logo {
-    max-width: 55%;
-    max-height: 170px;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 

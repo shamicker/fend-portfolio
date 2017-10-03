@@ -54,33 +54,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ABOUT  *************************************************/
 .about {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 1em 0 0;
-  align-items: center;
   border-radius: 10px;
 }
 
+.header-banner {
+  width: 100%;
+  background: #f4efe5;
+  display: flex;
+  max-height: 120px;
+}
+
 .header-logo {
-  order: 2;
+  flex: 1 1 auto;
   margin: 1em 0;
+  max-height: 100%;
 }
 
 .logo {
-  max-width: 80%;
+  max-height: 100%;
   display: block;
-  margin: 1em auto 0;
+  margin: 0 auto;
   border-radius: 10px;
 }
 
 .header-title {
-  flex-basis: 100%;
-  order: 1;
+  flex: 4 2 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background: #f4efe5;
+  justify-content: center;
   border-radius: 10px;
 }
 
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-para-div {
-  flex: 1 1 100%;
+  width: 100%;
   order: 3;
   border-radius: 10px;
 }
@@ -206,6 +207,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* MEDIA QUERIES  ********************************************/
+@media screen and (max-width: 494px) {
+  .header-logo {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .portfolio {
     justify-content: space-between;
@@ -219,19 +226,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 900px) {
-  .about {
-    justify-content: center;
-  }
+@media screen and (min-width: 1000px) {
   .header-title {
-    margin: 0 0 2em;
-  }
-  .header-logo, .about-para-div {
-    flex: 1 1 30%;
-  }
-  .logo {
-    max-width: 55%;
-    max-height: 170px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
